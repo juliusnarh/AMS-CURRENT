@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <!--<item-->
+    <!--android:id="@+id/action_update"-->
+    <!--android:title="@string/update"-->
+    <!--android:icon="@drawable/round_supervisor_account_white_24"-->
+    <!--app:showAsAction="ifRoom"/>-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_transaction"-->
+    <!--android:title="@string/inputTransaction"-->
+    <!--app:showAsAction="never"/>-->
+</menu>

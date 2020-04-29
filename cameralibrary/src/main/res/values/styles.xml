@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialCamera.CaptureActivity" parent="Theme.AppCompat.NoActionBar">
+        <inventory name="colorAccent">@android:color/white</inventory>
+        <inventory name="android:windowBackground">@android:color/black</inventory>
+        <inventory name="android:textColorPrimary">@android:color/white</inventory>
+    </style>
+
+</resources>

@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    //INPUTDISTRIBUTION
+    <string name="app_name_ip">Input Distribution</string>
+    <string name="search_hint">Tap here to search</string>
+    <string name="cart">Cart</string>
+    <string name="farmer_img">show farmer image here</string>
+    <string name="farmer_id">UCL–749–482</string>
+    <string name="farmer_name">Julius Narh</string>
+    <string name="farmer_coupons">Farmer coupons</string>
+    <string name="fert">Fertilizers</string>
+    <string name="seeds">Seeds</string>
+    <string name="pest">Pesticides</string>
+    <string name="insecticides">Insecticides</string>
+    <string name="mech_tools">Mechanical Tools</string>
+    <string name="services">Services</string>
+    <string name="fugar">Fugar</string>
+    <string name="add_service">Add Service</string>
+    <string name="add_input">Add Input</string>
+    <string name="price_item">GHS %.2f</string>
+    <string name="price_item2">GHS %.2f  </string>
+    <string name="expected">%.2f bag(s)</string>
+    <string name="weight">%.2f kg</string>
+    <string name="weight2">%f kg</string>
+    <string name="acre">%1$s acre(s)</string>
+    <string name="price">%.2f</string>
+    <string name="farm_count">%d</string>
+    <string name="pricealt">GHS %1$s x%2$s</string>
+    <string name="sms_info">Charges apply when sending sms to aggregators. please make sure you have enough credit to send messages</string>
+    <string name="numberselected">%d Farmer(s) Selected</string>
+
+    <string name="cartitem">%s items in cart</string>
+    <string name="new_input">Add new input</string>
+    <string name="next">Next</string>
+    <string name="negative">Cancel</string>
+    <string name="almost_done">Almost through</string>
+    <string name="complete">Complete</string>
+    <string name="weed">Weedicide</string>
+    <string name="title">Choose Action</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="temp_order">%1$s (%2$s)</string>
+    <string name="temp_quantity">x%1$s</string>
+    <string name="actual_order">%1$s\n%2$s</string>
+    <string name="actual_quantity">%1$s\n%2$s</string>
+    <string name="no_item_in_cart">No item in cart</string>
+    <string name="please_wait">Please wait</string>
+    <string name="adding_item">Adding item to cart</string>
+    <string name="inputTransaction">Transaction</string>
+    <string name="payment_style">Payment Style</string>
+    <string name="empty2">0.00</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+
+    <string name="mm">Received %1$s from %2$s. Transaction ID: %3$s</string>
+    <string-array name="categories">
+        <item>Seed</item>
+        <item>Fertilizer</item>
+        <item>Weedicide</item>
+        <item>Insecticide</item>
+        <item>Pesticide</item>
+        <item>Fugar</item>
+        <item>Herbicide</item>
+        <item>Mechanical Tool</item>
+        <item>Services</item>
+    </string-array>
+    <string-array name="aid">
+        <item>MOFA</item>
+        <item>Yara Ghana Limited</item>
+        <item>UCL GH</item>
+        <item>UCL USA</item>
+        <item>UCL MANA</item>
+        <item>UCL ACCRA</item>
+    </string-array>
+    <string-array name="servicetype">
+        <item>Shredding</item>
+        <item>Bagging</item>
+        <item>Scaling</item>
+        <item>Storage</item>
+        <item>Land Preparation</item>
+        <item>Fumigation</item>
+        <item>Seed Planting</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Hello, this is to inform you that we\'ll meet on the [DATE] at [TIME].</item>
+        <item>Hi, there is going to be a new consignment on [DATE], [TIME] at [VENUE].</item>
+    </string-array>
+    <string-array name="services_list">
+        <item>Add item to cart</item>
+        <item>Edit</item>
+    </string-array>
+    <string-array name="item_list">
+        <item>Add item to cart</item>
+    </string-array>
+    <string-array name="serviceprovider">
+        <item>MOFA</item>
+        <item>Yara Ghana Limited</item>
+        <item>UCL GH</item>
+        <item>UCL USA</item>
+        <item>UCL MANA</item>
+        <item>UCL ACCRA</item>
+    </string-array>
+    <string-array name="land_glyph">
+        <item>Landlord</item>
+        <item>Glyphosphate</item>
+    </string-array>
+    <string-array name="packages">
+        <item>Government Standard Package</item>
+        <item>RMG-Ransboat Package</item>
+    </string-array>
+    <string-array name="subsidized">
+        <item>Subsidized</item>
+        <item>Non-Subsidized</item>
+    </string-array>
+    <string-array name="payment_method">
+        <item>Cash</item>
+        <item>Mobile Money</item>
+        <item>Barter</item>
+    </string-array>
+    <string-array name="payment_style">
+        <item>Postpaid</item>
+        <item>Credit</item>
+    </string-array>
+    <string-array name="payment_style_alt">
+        <item>Credit</item>
+    </string-array>
+    <string-array name="recov">
+        <item>Make Purchase</item>
+        <item>Recovery</item>
+    </string-array>
+    <string-array name="scaletran">
+        <item>Recovery Transactions</item>
+        <item>Purchase Transactions</item>
+    </string-array>
+    <string-array name="has_coupon">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="summary">Activity Summary</string>
+    <string name="Description_farmer_image">farmer Image</string>
+    <string name="order_detail">Farmer Details (x50)</string>
+    <string name="actual_order_detail">%1$s (x%2$s)</string>
+    <string name="actual_order_detail_coupon">%1$s \tx%2$s%3$s</string>
+    <string name="xquantity">x%1$s</string>
+    <string name="for_coupon">%1$s:%2$s</string>
+    <string name="geocoord">%1$s - %2$s, %3$s, %4$s</string>
+    <string name="my_cart">My Cart</string>
+    <string name="almost_there">Almost there</string>
+    <string name="order_modify_btn">Modify</string>
+    <string name="order_remove_btn">Remove</string>
+    <string name="order_category">Input Category</string>
+    <string name="checkout">checkout</string>
+    <string name="edit_quantity">Change Quantity</string>
+    <string name="update_order">Updating orderCart...</string>
+    <string name="delete">Delete</string>
+    <string name="farmer_consent">I Julius Narh agree to exchange 14bags of produce as payment for the purchase of GHS 555.00 worth of goods and services by 13/05/2018</string>
+    <string name="barter">Barter Agreement</string>
+    <string name="agree">Agree</string>
+    <string name="recovery">recovery transactions</string>
+    <string name="purchase">purchase transactions</string>
+    <string name="view_declaration">View Debtor\'s date_created</string>
+    <string name="date">22/10/2019</string>
+    <string name="payment">Payment</string>
+    <string name="debt_payment">Agreed Items: %1$s bag(s).\nPlease enter payment below.</string>
+    <string name="no_debtor_record">No debtor record available</string>
+    <string name="redeem">redeem coupon</string>
+    <string name="quantity">Quantity</string>
+    <string name="enter_quantity">Please enter item quantity</string>
+    <string name="enter_amount">Amount payable: %1$.2f.\nPlease enter amount</string>
+    <string name="snuffoo">Consider selecting payment by credit</string>
+
+    <string name="sms_debtor_update">
+        Dear %1$s, you have redeemed %2$d bag(s) of %3$d bag(s)
+        owing as payment for Transaction ID: %4$s purchased on %5$s.
+    </string>
+
+    <string name="sms_debtor_paid">
+        Dear %1$s, you have made full payment of %2$d bag(s)
+        as payment for Transaction ID: %3$s purchased on %4$s.
+    </string>
+
+    <string name="sms_transaction_credit">
+        Dear %1$s you have made a total Transaction of GHS %2$.2f for the purchase of
+        %3$s. Purchase made on credit by Barter.\nTransaction ID: %4$s.
+    </string>
+
+    <string name="sms_trans">
+        Dear %1$s you have made a total Transaction of GHS %2$.2f for the purchase of
+        %3$s. Purchase made by %4$s.\nTransaction ID: %5$s.
+    </string>
+
+    <string name="sms_declaration">
+        I %1$s agree to exchange %2$s (50kg) bag(s) of produce as payment for the purchase of
+        GHS %3$.2f worth of inputs and services to be paid by %4$s.
+    </string>
+    <string name="sms_declaration_alt">
+        I %1$s agree to exchange %2$s (50kg) bag(s) of produce as payment for the purchase of
+        GHS %3$.2f worth of inputs and services covering %4$s acre(s).
+    </string>
+
+    <!--//INPUT DISTRIBUTION-->
+
+    <string name="file_provider_authority" translatable="false">com.quiro.fileproviderexample.fileprovider</string>
+
+    <string name="app_name">Agric Management System</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!--<string name="title_activity_login">Sign in</string>-->
+
+    <!--<string name="app_name">CameraView Demo</string>-->
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In orderCart to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+
+
+    <!--<string name="uclghana">Ghana Limited</string>-->
+    <string name="empty" />
+    <!--<string name="cms">CMS</string>-->
+    <!--<string name="mes">( Cocoa Management System )</string>-->
+    <!--<string name="ucl_email">info@uclghana.com</string>-->
+    <!--<string name="ucl"> GHANA LIMITED</string>-->
+    <!--<string name="navigation_drawer_open">Open navigation drawer</string>-->
+    <!--<string name="navigation_drawer_close">Close navigation drawer</string>-->
+    <!--<string name="farmer">Farmers</string>-->
+    <!--<string name="title_activity_main_aactive">MainAactive</string>-->
+    <!--<string name="select_farm">Upload Farm Image</string>-->
+    <!--<string name="action_addfarmer">Add Farmer</string>-->
+    <!--<string name="lbc">LBCs</string>-->
+    <!--<string name="buying_centers">Buying Centres</string>-->
+    <!--<string name="accredited">Accredited Input Dealers</string>-->
+    <!--<string name="purchasing">Purchasing Clerks</string>-->
+    <!--<string name="cocoa_purchase">Cocoa Purchase</string>-->
+    <!--<string name="input_distribution">Input Distribution</string>-->
+    <!--<string name="logout">Logout</string>-->
+    <!--<string name="no_lbc">No LBCs found!..</string>-->
+    <!--<string name="a">a</string>-->
+    <!--<string name="add_lbc">Add LBC</string>-->
+    <!--<string name="search">Search</string>-->
+
+    <string name="telephone">TELEPHONE</string>
+    <string name="title_activity_continue_registration">continue_registration</string>
+    <string name="farming_commnunity">FARMING COMMUNITY</string>
+    <string name="district">DISTRICT</string>
+    <string name="region">REGION</string>
+    <string name="country">COUNTRY</string>
+    <string name="id_card">ID CARD TYPE</string>
+    <string name="id_card_no">ID CARD NO#</string>
+    <string name="religion">RELIGION</string>
+    <string name="marital">MARITAL STATUS</string>
+    <string name="title_activity_picture_part">picture_part</string>
+    <string name="source">Souce Of Funding</string>
+    <string name="personal_saving">Personal Saving</string>
+    <string name="family_saving">Family Saving</string>
+    <string name="formal">Formal</string>
+    <string name="informal">Informal</string>
+    <string name="select_photo">Upload Farmer Image</string>
+    <string name="tap">Tap to select photo</string>
+    <string name="powered">Powered by</string>
+    <string name="certified">If certified type of cocoa type</string>
+    <string name="relation_to_farmer">RELATION TO FARMER</string>
+    <string name="nextking">NEXT OF KING</string>
+    <string name="farmer">Farmers</string>
+    <string name="title_activity_main_aactive">MainAactive</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="farm">Farms</string>
+    <string name="farmerhse">Farmer Household</string>
+    <string name="lbc">LBCs</string>
+    <string name="buying_centers">Buying Centres</string>
+    <string name="accredited">Accredited Input Dealers</string>
+    <string name="purchasing">Purchasing Clerks</string>
+    <string name="cocoa_purchase">Cocoa Purchase</string>
+    <string name="input_distribution">Input Distribution</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_farmer">Farmer</string>
+    <string name="search">Search</string>
+    <string name="action_addfarmer">Add Farmer</string>
+    <string name="action_advance_search">Advance Search</string>
+    <string name="add_farm">Add Farm</string>
+    <string name="title_activity_add__farm">Add_Farm</string>
+    <string name="farm_info">FARM INFORMATION</string>
+    <string name="farmerid">Farm ID</string>
+    <string name="location">LOCATION</string>
+    <string name="latitude">LATITUDE</string>
+    <string name="longitude">LONGITUDE</string>
+    <string name="farm_commnunity">FARM COMMUNITY</string>
+    <string name="title_activity_continue_add_farm_1">continue_add_farm_1</string>
+    <string name="total_land">TOTAL LAND AREA</string>
+    <string name="area_under">AREA UNDER COCOA</string>
+    <string name="year_establish">YEAR OF ESTABLISHMENT</string>
+    <string name="no_of_shade_tree">NO# OF SHADE TREES</string>
+    <string name="source_of_ownership">SOURCE OF OWNERSHIP</string>
+    <string name="type_of_cocoa">TYPE OF COCOA</string>
+    <string name="source_of_planting">SOURCE OF PLANTING MATERIAL</string>
+    <string name="other_specialty">If other, specify</string>
+    <string name="source_of_farm">SOURCE OF LABOUR</string>
+    <string name="title_activity_add_farm_photo">Add_farm_photo</string>
+    <string name="title_activity_add_farm_image_and_ques">Add_farm_image_and_ques</string>
+    <string name="select_farm">Upload Farm Image</string>
+    <string name="doyou">Do you receive Extension Service</string>
+    <string name="prohint">If private, name of organization</string>
+    <string name="req">Other Agric Activities?</string>
+    <string name="req2">If yes, specify</string>
+    <string name="title_activity_farmer_profile">FarmerProfile</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <!--<string name="section_format">Hello World from section: %1$d</string>-->
+    <string name="title_activity_profile">Profile</string>
+    <string name="household">Farmer HouseHold</string>
+    <string name="view_farm">View Farm</string>
+    <string name="farmer_profile">Farmer Profile</string>
+
+    <string name="title_activity_view_image">ViewImage</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="farm_not_found">Farm not availble, please add farm</string>
+    <string name="title_activity_view_farm_details">ViewFarmDetails</string>
+    <string name="image_found">Farm found</string>
+    <string name="title_activity_map">Map</string>
+    <string name="cms">AMS</string>
+    <string name="mes">( Agric Management System )</string>
+    <string name="ucl_email">info@uclghana.com</string>
+    <string name="ucl"> GHANA LIMITED</string>
+    <string name="add_hsehold">Add HouseHold</string>
+    <string name="title_activity_add_house_hod">AddHouseHod</string>
+    <string name="add_hse">ADD NEW HOUSEHOLD</string>
+    <string name="hsname">FULL NAME</string>
+    <string name="dobe">DATE OF BIRTH</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="uclghana_alt">UCL</string>
+    <string name="uclghana">Ghana Limited</string>
+    <string name="title_activity_input_distribution">InputDistribution</string>
+    <string name="farmer_activites">FARMER ACTIVITIES</string>
+    <string name="item">Item</string>
+    <string name="category">Category</string>
+    <string name="Quantity">Quantity</string>
+    <string name="unit_pice">Unit Price (GH)</string>
+    <string name="sub_total">Sub Total (Gh)</string>
+    <string name="title_activity_add_lbc">AddLBC</string>
+    <string name="lbcname">FULL NAME</string>
+    <string name="company_id">COMPANY ID</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="email">EMAIL ADDRESS</string>
+    <string name="address">ADDRESS</string>
+    <string name="phone">PHONE NUMBER</string>
+    <string name="title_activity_lbc">Lbc</string>
+    <string name="add_lbc">Add LBC</string>
+    <string name="no_lbc">No LBCs found!..</string>
+    <string name="a">a</string>
+    <string name="title_activity_view_lbc">ViewLbc</string>
+    <string name="unable">Uhm!, unable to connect to server....</string>
+    <string name="ucllogo">CMS</string>
+    <string name="title_activity_no_internet">NoInternet</string>
+    <string name="no_internet">No internet connection!</string>
+    <string name="check_settings">Check Settings</string>
+    <string name="title_activity_ucrop_image">UcropImage</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+    <string name="notification_image_saved">Image saved</string>
+    <string name="notification_image_saved_click_to_preview">Image saved. Click to preview.</string>
+
+    <string name="menu_download">Download</string>
+
+
+    <string name="label_sample">sample</string>
+    <string name="label_aspect_ratio">Aspect ratio</string>
+    <string name="label_dynamic">Dynamic</string>
+    <string name="label_image_source">Image source</string>
+    <string name="label_square">Square</string>
+    <string name="label_max_cropped_image_size">Max cropped image size</string>
+    <string name="label_compression_settings">Compression settings</string>
+    <string name="label_ui">UI</string>
+    <string name="label_width">Width</string>
+    <string name="label_height">Height</string>
+    <string name="label_resize_image_to_max_size">Resize image to max size</string>
+    <string name="label_hide_bottom_ui_controls">Hide bottom UI controls</string>
+    <string name="label_freestyle_crop">Freestyle crop</string>
+    <string name="label_select_picture">Select Picture</string>
+
+    <string name="button_pick_amp_crop"><![CDATA[Pick & Crop]]></string>
+    <string name="button_crop_random_image">Crop random image</string>
+
+    <string name="description_cropped_image">Cropped image</string>
+
+    <string name="format_crop_result_d_d">Crop Result (%1$dx%2$d)</string>
+    <string name="format_quality_d">Quality: %d</string>
+    <string name="format_d_d_px">%1$dx%2$d px</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="coordinates_go_here">Map and Coordinates goes here</string>
+
+    <string name="agreement">Sign Here</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="unit_m">(%s)</string>
+
+
+    <!--Countries -->
+    <string name="country_afg">Afghanistan</string>
+    <string name="country_ago">Angola</string>
+    <string name="country_are">United Arab Emirates</string>
+    <string name="country_arg">Argentina</string>
+    <string name="country_aus">Australia</string>
+    <string name="country_aut">Austria</string>
+    <string name="country_aze">Azerbaijan</string>
+    <string name="country_bdi">Burundi</string>
+    <string name="country_bel">Belgium</string>
+    <string name="country_ben">Benin</string>
+    <string name="country_bfa">Burkina Faso</string>
+    <string name="country_bgd">Bangladesh</string>
+    <string name="country_bgr">Bulgaria</string>
+    <string name="country_bih">Bosnia and Herzegovina</string>
+    <string name="country_blr">Belarus</string>
+    <string name="country_bol">Bolivia</string>
+    <string name="country_bra">Brazil</string>
+    <string name="country_caf">Central African Republic</string>
+    <string name="country_can">Canada</string>
+    <string name="country_che">Switzerland</string>
+    <string name="country_chl">Chile</string>
+    <string name="country_chn">China</string>
+    <string name="country_civ">Ivory Coast</string>
+    <string name="country_cmr">Cameroon</string>
+    <string name="country_cod">DR Congo</string>
+    <string name="country_cog">Republic of the Congo</string>
+    <string name="country_col">Colombia</string>
+    <string name="country_cri">Costa Rica</string>
+    <string name="country_cub">Cuba</string>
+    <string name="country_cze">Czech Republic</string>
+    <string name="country_deu">Germany</string>
+    <string name="country_dnk">Denmark</string>
+    <string name="country_dom">Dominican Republic</string>
+    <string name="country_dza">Algeria</string>
+    <string name="country_ecu">Ecuador</string>
+    <string name="country_egy">Egypt</string>
+    <string name="country_eri">Eritrea</string>
+    <string name="country_esp">Spain</string>
+    <string name="country_eth">Ethiopia</string>
+    <string name="country_fin">Finland</string>
+    <string name="country_fra">France</string>
+    <string name="country_gbr">United Kingdom</string>
+    <string name="country_geo">Georgia</string>
+    <string name="country_gha">Ghana</string>
+    <string name="country_gin">Guinea</string>
+    <string name="country_grc">Greece</string>
+    <string name="country_gtm">Guatemala</string>
+    <string name="country_hkg">Hong Kong</string>
+    <string name="country_hnd">Honduras</string>
+    <string name="country_hrv">Croatia</string>
+    <string name="country_hti">Haiti</string>
+    <string name="country_hun">Hungary</string>
+    <string name="country_idn">Indonesia</string>
+    <string name="country_ind">India</string>
+    <string name="country_irl">Ireland</string>
+    <string name="country_irn">Iran</string>
+    <string name="country_irq">Iraq</string>
+    <string name="country_isr">Israel</string>
+    <string name="country_ita">Italy</string>
+    <string name="country_jor">Jordan</string>
+    <string name="country_jpn">Japan</string>
+    <string name="country_kaz">Kazakhstan</string>
+    <string name="country_ken">Kenya</string>
+    <string name="country_kgz">Kyrgyzstan</string>
+    <string name="country_khm">Cambodia</string>
+    <string name="country_kor">South Korea</string>
+    <string name="country_lao">Laos</string>
+    <string name="country_lbn">Lebanon</string>
+    <string name="country_lbr">Liberia</string>
+    <string name="country_lby">Libya</string>
+    <string name="country_lka">Sri Lanka</string>
+    <string name="country_mar">Morocco</string>
+    <string name="country_mdg">Madagascar</string>
+    <string name="country_mex">Mexico</string>
+    <string name="country_mli">Mali</string>
+    <string name="country_mmr">Myanmar</string>
+    <string name="country_moz">Mozambique</string>
+    <string name="country_mwi">Malawi</string>
+    <string name="country_mys">Malaysia</string>
+    <string name="country_ner">Niger</string>
+    <string name="country_nga">Nigeria</string>
+    <string name="country_nic">Nicaragua</string>
+    <string name="country_nld">Netherlands</string>
+    <string name="country_nor">Norway</string>
+    <string name="country_npl">Nepal</string>
+    <string name="country_nzl">New Zealand</string>
+    <string name="country_omn">Oman</string>
+    <string name="country_pak">Pakistan</string>
+    <string name="country_per">Peru</string>
+    <string name="country_phl">Philippines</string>
+    <string name="country_png">Papua New Guinea</string>
+    <string name="country_pol">Poland</string>
+    <string name="country_prk">North Korea</string>
+    <string name="country_prt">Portugal</string>
+    <string name="country_pry">Paraguay</string>
+    <string name="country_pse">Palestine</string>
+    <string name="country_rou">Romania</string>
+    <string name="country_rus">Russia</string>
+    <string name="country_rwa">Rwanda</string>
+    <string name="country_sau">Saudi Arabia</string>
+    <string name="country_sdn">Sudan</string>
+    <string name="country_sen">Senegal</string>
+    <string name="country_sgp">Singapore</string>
+    <string name="country_sle">Sierra Leone</string>
+    <string name="country_slv">El Salvador</string>
+    <string name="country_som">Somalia</string>
+    <string name="country_srb">Serbia</string>
+    <string name="country_ssd">South Sudan</string>
+    <string name="country_svk">Slovakia</string>
+    <string name="country_swe">Sweden</string>
+    <string name="country_syr">Syria</string>
+    <string name="country_tcd">Chad</string>
+    <string name="country_tgo">Togo</string>
+    <string name="country_tha">Thailand</string>
+    <string name="country_tjk">Tajikistan</string>
+    <string name="country_tkm">Turkmenistan</string>
+    <string name="country_tun">Tunisia</string>
+    <string name="country_tur">Turkey</string>
+    <string name="country_twn">Taiwan</string>
+    <string name="country_tza">Tanzania</string>
+    <string name="country_uga">Uganda</string>
+    <string name="country_ukr">Ukraine</string>
+    <string name="country_usa">United States</string>
+    <string name="country_uzb">Uzbekistan</string>
+    <string name="country_ven">Venezuela</string>
+    <string name="country_vnm">Vietnam</string>
+    <string name="country_yem">Yemen</string>
+    <string name="country_zaf">South Africa</string>
+    <string name="country_zmb">Zambia</string>
+    <string name="country_zwe">Zimbabwe</string>
+    <string name="title_activity_tabbed_test">TabbedTestActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="settings">Settings</string>
+    <string name="readcsv">Populate Database</string>
+    <string name="sync">Sync</string>
+    <string name="title_activity_residential_map">Map</string>
+    <string name="longitude_">Longitude</string>
+    <string name="latitude_">Latitude</string>
+    <string name="no_coupon_available">No Coupon Available</string>
+    <string name="progress_form">Assessment Form</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="farm_assessment_form">Extension Service Form</string>
+    <string name="crop_information">Crop Information</string>
+    <string name="crop">Main Crop:</string>
+    <string name="crop_name">Soyabean, brown soyabean</string>
+    <string name="actual_crop_name">%1$s, %2$s</string>
+    <string name="variety">Variety</string>
+    <string name="variety_val">Yellow corn</string>
+    <string name="crop_protection">Crop Protection and Fertilization Application</string>
+    <string name="comments">Final Comments</string>
+    <string name="uploading">Uploading Form</string>
+    <string name="has_coupon">Does %1$s have a coupon?</string>
+    <string name="coupon">Coupon</string>
+    <string name="enter_coupon">Please enter coupon code</string>
+    <string name="checking_out">Checking out</string>
+    <string name="distribution_form">Distribution form</string>
+    <string name="upload">upload (%1$s)</string>
+    <string name="waiting">Waiting for confirmation message</string>
+    <string name="mobile_money">Mobile Money</string>
+    <string name="agent">Agent</string>
+    <string name="aggregator">Aggregator</string>
+    <string name="action_search">Search</string>
+    <string name="total_weight">Total Weight: %1$.2f kg</string>
+    <string name="total_amount">Total Amount: GHS %1$.2f</string>
+    <string name="recovered">Total Recovery: %1$.1f</string>
+    <string name="remaining">Remaining: %1$.1f</string>
+    <string name="reg_com">%1$s, %2$s</string>
+    <string name="_s10_20">%1$s/%2$s</string>
+    <string name="demographics">Registered Farmers: %1$s \tMales: %2$s \tFemales: %3$s</string>
+
+    <string name="demographics_2">Subsidized: %1$s \tNon-Subsidized: %2$s \tCash: %3$s \tMobileMoney: %4$s \tBarter: %5$s</string>
+
+    <string name="demographics_3">Farmers Served: %1$s \tSubsidized: %2$s \tNon-Subsidized: %3$s</string>
+
+    <string name="demographics_4">Farmers Served: %1$s \tRecoveries: %2$s \tPurchases: %3$s</string>
+
+
+    <string name="backup_data">Backup data</string>
+    <string name="import_data">Import data</string>
+    <string name="backup_before_import">Do you want backup curren database before import an old databas?</string>
+    <string name="select_file">Select file</string>
+    <string name="backup_empty">Backup file is empty</string>
+    <string name="synced">%1$s Un-synced File(s) </string>
+    <string name="farmeroptions">What do you want to do with %s?</string>
+    <string name="select_form_to_review">Select Form to review</string>
+    <string name="farm_no">%s Farm(s)</string>
+    <string name="all">view all</string>
+    <string name="inputs">inputs</string>
+    <string name="view_and_edit_service_provider">View service provider information</string>
+    <string name="view_and_edit_service_type">View service type information</string>
+    <string name="add_service_provider">Add service provider</string>
+    <string name="transactions_made">Transactions Made:</string>
+    <string name="expected_recovery_bags">Expected Recovery Bags:</string>
+    <string name="recoveries_made">Recoveries Made:</string>
+    <string name="bags_owing">Bags Owing:</string>
+    <string name="recoverypercent">%1$.2f%2$s</string>
+    <string name="title_activity_receive_inputs">Receive Inputs</string>
+    <string name="timeline">Select Start and End date to collect data specific to selected timeline</string>
+    <string name="title_activity_map_test">Map</string>
+    <string name="templates">TEMPLATES</string>
+    <string name="select_template">select template</string>
+    <string name="verify_farmer">Verify Farmer</string>
+    <string name="register_farmer">Register Farmer</string>
+    <string name="search_farmer">Search Farmer Locally</string>
+    <string name="search_farmer_aggregator">Search Farmer by Aggregator</string>
+    <string name="view_all_farmers">View All farmers</string>
+    <string name="search_server">Search Remote Server For farmer?</string>
+    <string name="search_count">%d farmers</string>
+    <string name="scan_wifi">Scan Wifi</string>
+    <string name="purchases">purchases</string>
+    <string name="view_profile">view profile</string>
+    <string name="input_recovery">input recovery</string>
+    <string name="extension_services">Extension Services</string>
+    <string name="view_all_transactions">View all transactions</string>
+    <string name="phone_no_eg">xxx-xxx-xxxx</string>
+    <string name="proceed_to_payment">PROCEED TO PAYMENT</string>
+    <string name="farm_area"> %.3f</string>
+    <string name="farm_length"> %.3f</string>
+    <string name="select_aggregator_list">Select Aggregator from list below</string>
+    <string name="no_aggregator">No aggregator found. Export aggregator from data export tool</string>
+    <string name="title_activity_farmer_search_aggregator">FarmerSearchAggregatorActivity</string>
+    <string name="assign_to_aggregator_fbo">Assign to Aggregator/FBO</string>
+    <string name="full_name">%1$s %2$s</string>
+    <string name="load_more">load more?</string>
+    <string name="export_farmers">Export FBOs Farmers</string>
+    <string name="title_activity_export_farmers_assigned_agg">ExportFarmersAssignedAggActivity
+    </string>
+    <string name="select_aggregator_who">Select FBO who\'s farmers you would like to export.</string>
+    <string name="tap_retry">Tap to retry</string>
+    <string name="please_wait_loading_aggregator_list">Please wait… Loading aggregator list</string>
+    <string name="content_desc_close_dialog">close dialog</string>
+</resources>

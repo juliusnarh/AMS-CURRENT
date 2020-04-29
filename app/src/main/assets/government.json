@@ -1,0 +1,62 @@
+[
+  {
+    "item": "Lake 601 White Maize",
+    "category": "seeds",
+    "quantity": 1,
+    "unitm": "10kg",
+    "subsidy": 30,
+    "openmarket": 250,
+    "supplier": "government-test",
+    "pdesc": "Lake 601 White Maize"
+  },
+  {
+    "item": "Lumax",
+    "category": "herbicide",
+    "quantity": 1,
+    "unitm": "l",
+    "subsidy": 52,
+    "openmarket": 65,
+    "supplier": "government-test",
+    "pdesc": "Lumax"
+  },
+  {
+    "item": "Landlord",
+    "category": "weedicides",
+    "quantity": 1,
+    "unitm": "l",
+    "subsidy": 16,
+    "openmarket": 20,
+    "supplier": "government-test",
+    "pdesc": "Landlord"
+  },
+  {
+    "item": "BELT Expert",
+    "category": "insecticides",
+    "quantity": 1,
+    "unitm": "l",
+    "subsidy": 40,
+    "openmarket": 40,
+    "supplier": "government-test",
+    "pdesc": "BELT Expert"
+  },
+  {
+    "item": "NPK 15-15-15",
+    "category": "fertilizers",
+    "quantity": 3,
+    "unitm": "50kg",
+    "subsidy": 75,
+    "openmarket": 136,
+    "supplier": "government-test",
+    "pdesc": "NPK 15-15-15"
+  },
+  {
+    "item": "Urea",
+    "category": "fertilizers",
+    "quantity": 1,
+    "unitm": "50kg",
+    "subsidy": 70,
+    "openmarket": 126,
+    "supplier": "government-test",
+    "pdesc": "Urea"
+  }
+]

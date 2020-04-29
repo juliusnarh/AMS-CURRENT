@@ -1,0 +1,1 @@
+include ':app', ':cameraviewlibrary', ':samlocationandgeocoding', ':scandocslibrary', ':materialsteppers'

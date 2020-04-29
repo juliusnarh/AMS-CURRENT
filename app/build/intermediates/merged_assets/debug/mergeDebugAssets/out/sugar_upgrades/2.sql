@@ -1,0 +1,1 @@
+alter table FARMERS add ISSELECTED BOOLEAN;

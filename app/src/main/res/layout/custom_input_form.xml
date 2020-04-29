@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:clickable="true"
+        android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:hint="Category"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/et_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Input Name"
+        android:inputType="text|textCapSentences"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/et_input_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/et_input_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/et_unitm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Unit measurement"
+        android:inputType="text|textCapSentences"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+
+    <EditText
+        android:id="@+id/input_aid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:clickable="true"
+        android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:hint="AID"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/input_subsidy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:clickable="true"
+        android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+        android:editable="false"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:hint="Subsidy"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <EditText
+        android:id="@+id/input_subprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Subsidized price"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_medium"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genderitems">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="documenttype">
+        <item>Birth Certificate</item>
+        <item>Land Document</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="populatepath">
+        <item>CSVDATAFOLDER</item>
+        <item>Backup Folder</item>
+    </string-array>
+
+    <string-array name="query_server_or_mobile">
+        <item>Mobile</item>
+        <item>Server</item>
+    </string-array>
+
+    <string-array name="timeline">
+        <item>All Seasons</item>
+        <item>2018 Major Season</item>
+        <item>2018 Minor Season</item>
+        <item>2019 Major Season</item>
+        <item>2019 Minor Season</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Wife</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Nephew</item>
+        <item>Niece</item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Uncle</item>
+        <item>Aunt</item>
+        <item>Inlaw</item>
+        <item>Grandmother</item>
+        <item>Grandfather</item>
+        <item>Tenant</item>
+    </string-array>
+
+    <string-array name="cocoaspecialtylist">
+        <item>Conventional</item>
+        <item>Traceable</item>
+        <item>Organic</item>
+        <item>Certified</item>
+        <item>Cocoa</item>
+        <item>Maize</item>
+        <item>Soya bean</item>
+        <item>Sorghum</item>
+        <item>Cashew</item>
+    </string-array>
+
+    <string-array name="certificationlist">
+        <item>UTZ</item>
+        <item>Fair Trade</item>
+        <item>Rain Forest</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="sourceoffunds">
+        <item>Personal Saving</item>
+        <item>Family Saving</item>
+        <item>Formal</item>
+        <item>Informal</item>
+    </string-array>
+
+    <string-array name="ownershipsource">
+        <item>Purchased</item>
+        <item>Inherited</item>
+        <item>Abunu</item>
+        <item>Hired</item>
+    </string-array>
+
+    <string-array name="cocoatype">
+        <item>Amazon</item>
+        <item>Mixed</item>
+        <item>Hybrid</item>
+        <item>Maize</item>
+        <item>Cocoa</item>
+        <item>Soya bean</item>
+        <item>Sorghum</item>
+        <item>Cashew</item>
+        <item>Rice</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="plantingmaterialsource">
+        <item>Cocoa Board</item>
+        <item>Private</item>
+        <item>Other</item>
+        <item>MOFA</item>
+    </string-array>
+
+    <string-array name="laboursource">
+        <item>Hired</item>
+        <item>Family</item>
+        <item>Contract</item>
+        <item>Shared labour/ Nnoboa</item>
+        <item>MOFA</item>
+    </string-array>
+
+    <string-array name="provideingorg">
+        <item>Cocobod</item>
+        <item>Private</item>
+        <item>MOFA</item>
+    </string-array>
+
+    <string-array name="edulevel">
+        <item>Basic</item>
+        <item>Secondary</item>
+        <item>Tertiary</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="region_code">
+        <item>CR</item>
+        <item>GR</item>
+        <item>VR</item>
+        <item>AR</item>
+        <item>WR</item>
+        <item>ER</item>
+        <item>BR</item>
+        <item>UER</item>
+        <item>NR</item>
+        <item>UWR</item>
+    </string-array>
+
+    <string-array name="district_code">
+        <item>CR10</item>
+        <item>GR02</item>
+        <item>GR13</item>
+        <item>GR12</item>
+        <item>VR24</item>
+        <item>AR16</item>
+        <item>AR15</item>
+        <item>GR06</item>
+        <item>VR18</item>
+        <item>AR23</item>
+        <item>CR16</item>
+        <item>CR06</item>
+        <item>VR19</item>
+        <item>AR11</item>
+        <item>AR10</item>
+        <item>WR07</item>
+        <item>CR11</item>
+        <item>VR21</item>
+        <item>VR25</item>
+        <item>ER04</item>
+        <item>ER09</item>
+        <item>ER05</item>
+        <item>ER20</item>
+        <item>ER18</item>
+        <item>AR17</item>
+        <item>AR12</item>
+        <item>WR08</item>
+        <item>WR18</item>
+        <item>AR08</item>
+        <item>AR28</item>
+        <item>AR13</item>
+        <item>GR07</item>
+        <item>CR09</item>
+        <item>AR07</item>
+        <item>CR03</item>
+        <item>CR12</item>
+        <item>BR02</item>
+        <item>BR12</item>
+        <item>ER12</item>
+        <item>BR25</item>
+        <item>BR20</item>
+        <item>BR11</item>
+        <item>ER14</item>
+        <item>AR21</item>
+        <item>AR18</item>
+        <item>AR14</item>
+        <item>CR19</item>
+        <item>CR07</item>
+        <item>ER26</item>
+        <item>BR24</item>
+        <item>UER02</item>
+        <item>UER04</item>
+        <item>AR04</item>
+        <item>BR03</item>
+        <item>WR16</item>
+        <item>WR15</item>
+        <item>VR11</item>
+        <item>WR05</item>
+        <item>UER10</item>
+        <item>ER02</item>
+        <item>ER19</item>
+        <item>ER17</item>
+        <item>WR22</item>
+        <item>NR11</item>
+        <item>UER01</item>
+        <item>UER05</item>
+        <item>AR20</item>
+        <item>AR27</item>
+        <item>UER13</item>
+        <item>UER08</item>
+        <item>NR04</item>
+        <item>CR01</item>
+        <item>NR14</item>
+        <item>UWR08</item>
+        <item>VR15</item>
+        <item>VR07</item>
+        <item>ER21</item>
+        <item>BR06</item>
+        <item>BR18</item>
+        <item>BR26</item>
+        <item>CR04</item>
+        <item>AR03</item>
+        <item>AR09</item>
+        <item>CR20</item>
+        <item>WR12</item>
+        <item>ER11</item>
+        <item>GR09</item>
+        <item>GR04</item>
+        <item>GR10</item>
+        <item>GR03</item>
+        <item>UER06</item>
+        <item>CR14</item>
+        <item>CR15</item>
+        <item>NR05</item>
+        <item>NR16</item>
+        <item>NR22</item>
+        <item>NR25</item>
+        <item>NR10</item>
+        <item>VR04</item>
+        <item>VR22</item>
+        <item>VR02</item>
+        <item>BR15</item>
+        <item>BR13</item>
+        <item>VR14</item>
+        <item>UWR07</item>
+        <item>WR06</item>
+        <item>WR21</item>
+        <item>VR05</item>
+        <item>NR12</item>
+        <item>UER03</item>
+        <item>UER07</item>
+        <item>VR01</item>
+        <item>VR09</item>
+        <item>VR13</item>
+        <item>BR01</item>
+        <item>BR16</item>
+        <item>CR02</item>
+        <item>NR13</item>
+        <item>VR03</item>
+        <item>GR14</item>
+        <item>VR08</item>
+        <item>VR23</item>
+        <item>VR17</item>
+        <item>AR01</item>
+        <item>NR19</item>
+        <item>AR24</item>
+        <item>ER22</item>
+        <item>ER23</item>
+        <item>ER24</item>
+        <item>ER15</item>
+        <item>ER13</item>
+        <item>ER03</item>
+        <item>GR11</item>
+        <item>GR08</item>
+        <item>UWR06</item>
+        <item>UWR11</item>
+        <item>GR05</item>
+        <item>ER06</item>
+        <item>AR05</item>
+        <item>NR20</item>
+        <item>NR09</item>
+        <item>NR18</item>
+        <item>CR08</item>
+        <item>NR21</item>
+        <item>WR20</item>
+        <item>UER09</item>
+        <item>UWR09</item>
+        <item>UWR10</item>
+        <item>NR06</item>
+        <item>NR07</item>
+        <item>ER01</item>
+        <item>GR15</item>
+        <item>BR17</item>
+        <item>BR07</item>
+        <item>VR10</item>
+        <item>VR12</item>
+        <item>ER07</item>
+        <item>WR03</item>
+        <item>AR02</item>
+        <item>AR06</item>
+        <item>AR22</item>
+        <item>WR09</item>
+        <item>BR14</item>
+        <item>UER11</item>
+        <item>NR15</item>
+        <item>NR23</item>
+        <item>NR03</item>
+        <item>NR08</item>
+        <item>WR01</item>
+        <item>WR11</item>
+        <item>WR04</item>
+        <item>AR29</item>
+        <item>AR19</item>
+        <item>AR26</item>
+        <item>AR30</item>
+        <item>AR25</item>
+        <item>BR23</item>
+        <item>BR21</item>
+        <item>GR16</item>
+        <item>WR10</item>
+        <item>UWR04</item>
+        <item>UWR05</item>
+        <item>WR17</item>
+        <item>ER08</item>
+        <item>BR05</item>
+        <item>BR19</item>
+        <item>BR22</item>
+        <item>UER12</item>
+        <item>NR01</item>
+        <item>BR09</item>
+        <item>BR10</item>
+        <item>WR02</item>
+        <item>NR24</item>
+        <item>BR08</item>
+        <item>BR27</item>
+        <item>GR01</item>
+        <item>NR26</item>
+        <item>VR16</item>
+        <item>VR20</item>
+        <item>VR06</item>
+        <item>CR18</item>
+        <item>CR17</item>
+        <item>ER25</item>
+        <item>CR05</item>
+        <item>CR13</item>
+        <item>ER16</item>
+        <item>UWR01</item>
+        <item>UWR02</item>
+        <item>UWR03</item>
+        <item>WR13</item>
+        <item>WR14</item>
+        <item>WR19</item>
+        <item>BR04</item>
+        <item>NR02</item>
+        <item>ER10</item>
+        <item>NR17</item>
+    </string-array>
+
+
+    <string-array name="district">
+        <item>Abura Asebu Kwaman</item>
+        <item>Accra Metro</item>
+        <item>Ada East</item>
+        <item>Ada West</item>
+        <item>Adaklu</item>
+        <item>Adansi North</item>
+        <item>Adansi South</item>
+        <item>Adentan</item>
+        <item>Afadzato South</item>
+        <item>Afigya-Kwabere</item>
+        <item>Agona East</item>
+        <item>Agona West</item>
+        <item>Agortime Ziope</item>
+        <item>Ahafo Ano North</item>
+        <item>Ahafo Ano South</item>
+        <item>Ahanta West</item>
+        <item>Ajumako Enyan Esiam</item>
+        <item>Akatsi North</item>
+        <item>Akatsi South</item>
+        <item>Akim East</item>
+        <item>Akim West</item>
+        <item>Akwapim North</item>
+        <item>Akwapim South</item>
+        <item>Akyemansa</item>
+        <item>Amansie Central</item>
+        <item>Amansie West</item>
+        <item>Amenfi West</item>
+        <item>Aowin</item>
+        <item>Asante Akim Central</item>
+        <item>Asante Akim North</item>
+        <item>Asante Akim South</item>
+        <item>Ashiaman</item>
+        <item>Asikuma Odoben Brakwa</item>
+        <item>Asokore Mampong</item>
+        <item>Assin North</item>
+        <item>Assin South</item>
+        <item>Asunafo North</item>
+        <item>Asunafo South</item>
+        <item>Asuogyaman</item>
+        <item>Asutifi North</item>
+        <item>Asutifi South</item>
+        <item>Atebubu</item>
+        <item>Atiwa</item>
+        <item>Atwima Kwamwoma</item>
+        <item>Atwima Mponua</item>
+        <item>Atwima Nwabiagye</item>
+        <item>Awutu Senya</item>
+        <item>Awutu Senya East</item>
+        <item>Ayensuano</item>
+        <item>Banda</item>
+        <item>Bawku</item>
+        <item>Bawku West</item>
+        <item>Bekwai</item>
+        <item>Berekum</item>
+        <item>Bia East</item>
+        <item>Bia West</item>
+        <item>Biakoye</item>
+        <item>Bibiani Anhwiaso</item>
+        <item>Binduri</item>
+        <item>Birim Central</item>
+        <item>Birim North</item>
+        <item>Birim South</item>
+        <item>Bodie</item>
+        <item>Bole</item>
+        <item>Bolgatanga</item>
+        <item>Bongo</item>
+        <item>Bosome Freho</item>
+        <item>Bosomtwe</item>
+        <item>Bulisa North</item>
+        <item>Bulisa South</item>
+        <item>Bunkpurugu-Yunyoo</item>
+        <item>Cape Coast</item>
+        <item>Chereponi</item>
+        <item>Daffiama Bissie Issa</item>
+        <item>Dayi North</item>
+        <item>Dayi South</item>
+        <item>Denkyembour</item>
+        <item>Dormaa Central</item>
+        <item>Dormaa East</item>
+        <item>Dormaa West</item>
+        <item>Efutu</item>
+        <item>Ejisu Juaben</item>
+        <item>Ejura-Sekyidumase</item>
+        <item>Ekumfi</item>
+        <item>Ellembelle</item>
+        <item>Fanteakwa</item>
+        <item>Ga Central</item>
+        <item>Ga East</item>
+        <item>Ga South</item>
+        <item>Ga West</item>
+        <item>Garu Tempane</item>
+        <item>Gomoa East</item>
+        <item>Gomoa West</item>
+        <item>Gonja Central</item>
+        <item>Gonja East</item>
+        <item>Gonja North</item>
+        <item>Gonja West</item>
+        <item>Gushiegu</item>
+        <item>Ho</item>
+        <item>Ho West</item>
+        <item>Hohoe</item>
+        <item>Jaman North</item>
+        <item>Jaman South</item>
+        <item>Jasikan</item>
+        <item>Jirapa</item>
+        <item>Jomoro</item>
+        <item>Juabeso</item>
+        <item>Kadjebi</item>
+        <item>Karaga</item>
+        <item>Kassena Nankana</item>
+        <item>Kassena Nankana West</item>
+        <item>Keta</item>
+        <item>Ketu North</item>
+        <item>Ketu South</item>
+        <item>Kintampo North</item>
+        <item>Kintampo South</item>
+        <item>Komenda Edina Eguafo</item>
+        <item>Kpandai</item>
+        <item>Kpando</item>
+        <item>Kpone</item>
+        <item>Krachi East</item>
+        <item>Krachi Ntsumuru</item>
+        <item>Krachi West</item>
+        <item>Kumasi Metro</item>
+        <item>Kumbugu</item>
+        <item>Kwabere East</item>
+        <item>Kwaebibirem</item>
+        <item>Kwahu Afram Plains North</item>
+        <item>Kwahu Afram Plains South</item>
+        <item>Kwahu East</item>
+        <item>Kwahu South</item>
+        <item>Kwahu West</item>
+        <item>La Dade-Kotopon</item>
+        <item>La Nkwantanang-Madina</item>
+        <item>Lambussie Kami</item>
+        <item>Lawra</item>
+        <item>Ledzokuku Kronor</item>
+        <item>Lower Manya Krobo</item>
+        <item>Mampong</item>
+        <item>Mamprugu Moaduri</item>
+        <item>Mamprusi East</item>
+        <item>Mamprusi West</item>
+        <item>Mfantseman</item>
+        <item>Mion</item>
+        <item>Mpohor</item>
+        <item>Nabdam</item>
+        <item>Nadowli Kaleo</item>
+        <item>Nandom</item>
+        <item>Nanumba North</item>
+        <item>Nanumba South</item>
+        <item>New Juaben</item>
+        <item>Ningo Prampram</item>
+        <item>Nkoranza North</item>
+        <item>Nkoranza South</item>
+        <item>Nkwanta North</item>
+        <item>Nkwanta South</item>
+        <item>Nsawam Adoagyiri</item>
+        <item>Nzema East</item>
+        <item>Obuasi Municipal</item>
+        <item>Offinso</item>
+        <item>Offinso North</item>
+        <item>Prestea Huni</item>
+        <item>Pru</item>
+        <item>Pusiga</item>
+        <item>Saboba</item>
+        <item>Sagnerigu</item>
+        <item>Savelugu-Nanton</item>
+        <item>Sawla Tuna Kalba</item>
+        <item>Secondi-Takoradi Metro</item>
+        <item>Sefwi Akontombra</item>
+        <item>Sefwi Wiaso</item>
+        <item>Sekyere Afram Plains</item>
+        <item>Sekyere Central</item>
+        <item>Sekyere East</item>
+        <item>Sekyere Kumawu</item>
+        <item>Sekyere South</item>
+        <item>Sene East</item>
+        <item>Sene West</item>
+        <item>Shai-Osudoku</item>
+        <item>Shama</item>
+        <item>Sissala East</item>
+        <item>Sissala West</item>
+        <item>Suaman</item>
+        <item>Suhum</item>
+        <item>Sunyani</item>
+        <item>Sunyani West</item>
+        <item>Tain</item>
+        <item>Talensi</item>
+        <item>Tamale</item>
+        <item>Tano North</item>
+        <item>Tano South</item>
+        <item>Tarkwa Nsuaem</item>
+        <item>Tatale Sanguli</item>
+        <item>Techiman</item>
+        <item>Techiman North</item>
+        <item>Tema Municipal</item>
+        <item>Tolon</item>
+        <item>Tongu Central</item>
+        <item>Tongu North</item>
+        <item>Tongu South</item>
+        <item>Twifo Ati-Morkwa</item>
+        <item>Twifo Hemang Lower</item>
+        <item>Upper Akim West</item>
+        <item>Upper Denkyira East</item>
+        <item>Upper Denkyira West</item>
+        <item>Upper Manya Krobo</item>
+        <item>Wa</item>
+        <item>Wa East</item>
+        <item>Wa West</item>
+        <item>Wassa Amenfi Central</item>
+        <item>Wassa Amenfi West</item>
+        <item>Wassa East</item>
+        <item>Wenchi</item>
+        <item>Yendi</item>
+        <item>Yilo Krobo</item>
+        <item>Zabzugu</item>
+
+    </string-array>
+
+    <string-array name="regionlist">
+        <item>Ashanti</item>
+        <item>Brong Ahafo</item>
+        <item>Central</item>
+        <item>Eastern</item>
+        <item>Greater Accra</item>
+        <item>Northern</item>
+        <item>Upper East</item>
+        <item>Upper West</item>
+        <item>Volta</item>
+        <item>Western</item>
+    </string-array>
+
+    <string-array name="maritalstatuss">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Cohabitation</item>
+        <item>Seperation</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+
+
+    <string-array name="idtypes">
+        <item>National ID</item>
+        <item>Drivers License</item>
+        <item>Passport</item>
+        <item>Voters ID</item>
+        <item>NHIS</item>
+    </string-array>
+
+    <string-array name="countries" translatable="false">
+        <item>@string/country_gha</item>
+        <item>@string/country_afg</item>
+        <item>@string/country_ago</item>
+        <item>@string/country_are</item>
+        <item>@string/country_arg</item>
+        <item>@string/country_aus</item>
+        <item>@string/country_aut</item>
+        <item>@string/country_aze</item>
+        <item>@string/country_bdi</item>
+        <item>@string/country_bel</item>
+        <item>@string/country_ben</item>
+        <item>@string/country_bfa</item>
+        <item>@string/country_bgd</item>
+        <item>@string/country_bgr</item>
+        <item>@string/country_bih</item>
+        <item>@string/country_blr</item>
+        <item>@string/country_bol</item>
+        <item>@string/country_bra</item>
+        <item>@string/country_caf</item>
+        <item>@string/country_can</item>
+        <item>@string/country_che</item>
+        <item>@string/country_chl</item>
+        <item>@string/country_chn</item>
+        <item>@string/country_civ</item>
+        <item>@string/country_cmr</item>
+        <item>@string/country_cod</item>
+        <item>@string/country_cog</item>
+        <item>@string/country_col</item>
+        <item>@string/country_cri</item>
+        <item>@string/country_cub</item>
+        <item>@string/country_cze</item>
+        <item>@string/country_deu</item>
+        <item>@string/country_dnk</item>
+        <item>@string/country_dom</item>
+        <item>@string/country_dza</item>
+        <item>@string/country_ecu</item>
+        <item>@string/country_egy</item>
+        <item>@string/country_eri</item>
+        <item>@string/country_esp</item>
+        <item>@string/country_eth</item>
+        <item>@string/country_fin</item>
+        <item>@string/country_fra</item>
+        <item>@string/country_gbr</item>
+        <item>@string/country_geo</item>
+        <item>@string/country_gha</item>
+        <item>@string/country_gin</item>
+        <item>@string/country_grc</item>
+        <item>@string/country_gtm</item>
+        <item>@string/country_hkg</item>
+        <item>@string/country_hnd</item>
+        <item>@string/country_hrv</item>
+        <item>@string/country_hti</item>
+        <item>@string/country_hun</item>
+        <item>@string/country_idn</item>
+        <item>@string/country_ind</item>
+        <item>@string/country_irl</item>
+        <item>@string/country_irn</item>
+        <item>@string/country_irq</item>
+        <item>@string/country_isr</item>
+        <item>@string/country_ita</item>
+        <item>@string/country_jor</item>
+        <item>@string/country_jpn</item>
+        <item>@string/country_kaz</item>
+        <item>@string/country_ken</item>
+        <item>@string/country_kgz</item>
+        <item>@string/country_khm</item>
+        <item>@string/country_kor</item>
+        <item>@string/country_lao</item>
+        <item>@string/country_lbn</item>
+        <item>@string/country_lbr</item>
+        <item>@string/country_lby</item>
+        <item>@string/country_lka</item>
+        <item>@string/country_mar</item>
+        <item>@string/country_mdg</item>
+        <item>@string/country_mex</item>
+        <item>@string/country_mli</item>
+        <item>@string/country_mmr</item>
+        <item>@string/country_moz</item>
+        <item>@string/country_mwi</item>
+        <item>@string/country_mys</item>
+        <item>@string/country_ner</item>
+        <item>@string/country_nga</item>
+        <item>@string/country_nic</item>
+        <item>@string/country_nld</item>
+        <item>@string/country_nor</item>
+        <item>@string/country_npl</item>
+        <item>@string/country_nzl</item>
+        <item>@string/country_omn</item>
+        <item>@string/country_pak</item>
+        <item>@string/country_per</item>
+        <item>@string/country_phl</item>
+        <item>@string/country_png</item>
+        <item>@string/country_pol</item>
+        <item>@string/country_prk</item>
+        <item>@string/country_prt</item>
+        <item>@string/country_pry</item>
+        <item>@string/country_pse</item>
+        <item>@string/country_rou</item>
+        <item>@string/country_rus</item>
+        <item>@string/country_rwa</item>
+        <item>@string/country_sau</item>
+        <item>@string/country_sdn</item>
+        <item>@string/country_sen</item>
+        <item>@string/country_sgp</item>
+        <item>@string/country_sle</item>
+        <item>@string/country_slv</item>
+        <item>@string/country_som</item>
+        <item>@string/country_srb</item>
+        <item>@string/country_ssd</item>
+        <item>@string/country_svk</item>
+        <item>@string/country_swe</item>
+        <item>@string/country_syr</item>
+        <item>@string/country_tcd</item>
+        <item>@string/country_tgo</item>
+        <item>@string/country_tha</item>
+        <item>@string/country_tjk</item>
+        <item>@string/country_tkm</item>
+        <item>@string/country_tun</item>
+        <item>@string/country_tur</item>
+        <item>@string/country_twn</item>
+        <item>@string/country_tza</item>
+        <item>@string/country_uga</item>
+        <item>@string/country_ukr</item>
+        <item>@string/country_usa</item>
+        <item>@string/country_uzb</item>
+        <item>@string/country_ven</item>
+        <item>@string/country_vnm</item>
+        <item>@string/country_yem</item>
+        <item>@string/country_zaf</item>
+        <item>@string/country_zmb</item>
+        <item>@string/country_zwe</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Manual</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="farmers">
+        <item>Farms</item>
+        <item>No Farms</item>
+    </string-array>
+    <string-array name="editdelete">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+</resources>

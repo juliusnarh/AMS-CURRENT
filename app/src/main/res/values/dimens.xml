@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="thumbnail">40dp</dimen>
+    <dimen name="row_padding">10dp</dimen>
+    <dimen name="contact_name">15dp</dimen>
+    <dimen name="contact_number">12dp</dimen>
+    <dimen name="dimen_10">10sp</dimen>
+    <dimen name="dimen_20">20sp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="activity_margin">10dp</dimen>
+    <dimen name="card_height">96dp</dimen>
+    <dimen name="card_weight">110dp</dimen>
+    <dimen name="card_height_tab">170dp</dimen>
+    <dimen name="card_weight_tab">160dp</dimen>
+    <dimen name="text_size_small">13.0sp</dimen>
+    <dimen name="text_size_ssmall">12.0sp</dimen>
+    <dimen name="text_size_bsmall">15.0sp</dimen>
+    <dimen name="text_size_extra_small">11.0sp</dimen>
+    <dimen name="text_size_tiny">10.0sp</dimen>
+    <dimen name="text_size_extra_tiny">9.0sp</dimen>
+    <dimen name="text_size">18.0sp</dimen>
+    <dimen name="text_size_medium">16.0sp</dimen>
+    <dimen name="text_size_medium_up">17.0sp</dimen>
+    <dimen name="text_size_medium_up_up">18.0sp</dimen>
+    <dimen name="text_size_extra_large">23.0sp</dimen>
+    <dimen name="text_size_large">20.0sp</dimen>
+    <dimen name="color_strip">3dp</dimen>
+    <dimen name="fab_elevation_press">12dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="statusbar_size">24dp</dimen>
+    <dimen name="cardview_toolbar_spacer">16dp</dimen>
+    <dimen name="toolbar_double_height">112dp</dimen>
+    <dimen name="appbar_header_height">256dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="toolbarMargin">8dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <integer name="anim_duration_long">600</integer>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="toolbar_profile_width">90dp</dimen>
+    <dimen name="ic_plus_width">28dp</dimen>
+    <dimen name="search_view_inset">5dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/order_card"
+    android:background="@color/white_alpha"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:weightSum="3"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:fontFamily="@font/app_font"
+        android:text="TOTAL"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/total_Order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/app_font"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/background_btn_3"
+        android:fontFamily="@font/dosis_bold"
+        android:outlineProvider="paddedBounds"
+        android:text="@string/checkout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_extra_small" />
+
+</LinearLayout>

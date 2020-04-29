@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="androidx.core.app.ActivityCompat" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/parent_view"
+        tools:context=".activities.FarmerSearchServerActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:titleEnabled="true">
+
+                <com.arlib.floatingsearchview.FloatingSearchView
+                    android:id="@+id/floating_search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:elevation="20dp"
+                    app:floatingSearch_close_search_on_keyboard_dismiss="false"
+                    app:floatingSearch_dimBackground="false"
+                    app:floatingSearch_dismissOnOutsideTouch="true"
+                    app:floatingSearch_leftActionMode="showSearch"
+                    app:floatingSearch_hideOverflowMenuWhenFocused="false"
+                    app:floatingSearch_menu="@menu/menu_search_view"
+                    app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+                    app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+                    app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+                    app:floatingSearch_searchHint="Search Farmer"
+                    app:floatingSearch_showSearchKey="true"
+                    app:floatingSearch_suggestionsListAnimDuration="250"
+                    app:layout_collapseMode="pin"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <include android:id="@+id/content" layout="@layout/content_remote_search" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

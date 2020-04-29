@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.telpo.usb.finger.activities.input.distribution.DetailsActivity">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="androidx.core.app.ActivityCompat" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/_l1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/gradient"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/empty"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:tint="@color/grey_200" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/farmerimg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:shadowColor="@color/black_trans80"
+                        android:src="@drawable/jnarh"
+                        android:transitionName="farmerimg"
+                        CircleProgressView:civ_border_color="@color/black_trans80"
+                        CircleProgressView:civ_border_width="2dp" />
+
+
+                    <TextView
+                        android:id="@+id/farmername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Wiliam Snoe"
+                        android:background="@drawable/background_round_black"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginEnd="10dp"
+                    CircleProgressView:cardElevation="4dp"
+                    CircleProgressView:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Farm(s)"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/farmcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="5"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_ssmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Farmer ID"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/farmerid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="UCL-200-35"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_ssmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Community"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/community"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="Maize"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_ssmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/_l2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/_l1"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/declaration_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:fontFamily="@font/dosis_bold"
+                                android:padding="5dp"
+                                android:text="BARTER AGREEMENT"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/text_size_small"
+                                android:textStyle="italic" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/modify_recovery"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.2"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:src="@drawable/ic_edit"
+                                CircleProgressView:civ_border_color="@color/grey_300"
+                                CircleProgressView:civ_border_width="0.1dip"
+                                CircleProgressView:civ_circle_background_color="@color/grey_100a"
+                                tools:ignore="UnusedAttribute" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/declaration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey_100"
+                            android:fontFamily="@font/dosis_extralight"
+                            android:padding="7dp"
+                            android:text="@string/sms_declaration"
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_bsmall"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/dosis_bold"
+                            android:padding="5dp"
+                            android:text="SCALE TRANSACTION"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="italic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:text="TransID: "
+                                    android:textColor="@color/md_orange_800" />
+
+                                <TextView
+                                    android:id="@+id/transid"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8"
+                                    android:ellipsize="end"
+                                    android:gravity="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="UCL-200-35-200-355-200-35-20-35-200-35"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <!--AAAAAAAAAAAAAAAAAAAAAA-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/weight_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.4"
+                                            android:text="Weight:"
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/weight"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/weight_layout"
+                                            android:layout_weight="0.6"
+                                            android:gravity="end"
+                                            android:text="200"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/payable_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.65"
+                                            android:ellipsize="end"
+                                            android:singleLine="true"
+                                            android:text="@string/expected_recovery_bags"
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/payable"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/payable_layout"
+                                            android:layout_weight="0.35"
+                                            android:gravity="end"
+                                            android:text="40"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/amount_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.35"
+                                            android:text="Amount: "
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/amount"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/amount_layout"
+                                            android:layout_weight="0.65"
+                                            android:gravity="end"
+                                            android:text="@string/price_item"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/pcid_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.35"
+                                            android:text="Pcid: "
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/pcid"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/pcid_layout"
+                                            android:layout_weight="0.65"
+                                            android:gravity="end"
+                                            android:text="AtoK"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                                <!--BBBBBBBBBBBBBBBBBBBBBB-->
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/count_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.65"
+                                            android:ellipsize="end"
+                                            android:singleLine="true"
+                                            android:text="Bags Tendered:"
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/count"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/count_layout"
+                                            android:layout_weight="0.35"
+                                            android:ellipsize="end"
+                                            android:gravity="end"
+                                            android:singleLine="true"
+                                            android:text="200"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/tendered_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.65"
+                                            android:ellipsize="end"
+                                            android:singleLine="true"
+                                            android:text="@string/recoveries_made"
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/tendered"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/tendered_layout"
+                                            android:layout_weight="0.35"
+                                            android:ellipsize="end"
+                                            android:gravity="end"
+                                            android:singleLine="true"
+                                            android:text="14"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/amountowing_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:ellipsize="end"
+                                            android:singleLine="true"
+                                            android:text="Bags Owing:"
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/amountowing"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/amountowing_layout"
+                                            android:layout_weight="0.5"
+                                            android:ellipsize="end"
+                                            android:gravity="end"
+                                            android:singleLine="true"
+                                            android:text="26"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:id="@+id/date_layout"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.2"
+                                            android:ellipsize="end"
+                                            android:singleLine="true"
+                                            android:text="Date: "
+                                            android:textColor="@color/md_orange_800" />
+
+                                        <TextView
+                                            android:id="@+id/date"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="2dp"
+                                            android:layout_toEndOf="@id/date_layout"
+                                            android:layout_weight="0.8"
+                                            android:ellipsize="end"
+                                            android:gravity="end"
+                                            android:singleLine="true"
+                                            android:text="yyyy.MM.dd"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="@dimen/text_size_small"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/farmerprogress"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    CircleProgressView:cpv_autoTextSize="true"
+                    CircleProgressView:cpv_barStartEndLineWidth="@dimen/text_size_tiny"
+                    CircleProgressView:cpv_barStrokeCap="Round"
+                    CircleProgressView:cpv_barWidth="25dp"
+                    CircleProgressView:cpv_innerContourSize="0dp"
+                    CircleProgressView:cpv_maxValue="100"
+                    CircleProgressView:cpv_outerContourSize="0dp"
+                    CircleProgressView:cpv_rimColor="@color/bar2"
+                    CircleProgressView:cpv_rimWidth="25dp"
+                    CircleProgressView:cpv_showUnit="true"
+                    CircleProgressView:cpv_textColor="@color/accent"
+                    CircleProgressView:cpv_textScale="0.9"
+                    CircleProgressView:cpv_unit="%"
+                    CircleProgressView:cpv_unitColor="@color/accent"
+                    CircleProgressView:cpv_unitPosition="right_top"
+                    CircleProgressView:cpv_unitScale="0.9"
+                    CircleProgressView:cpv_value="50" />
+
+                <TextView
+                    android:id="@+id/tenderedprogress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/farmerprogress"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="10/100"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

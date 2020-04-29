@@ -1,0 +1,314 @@
+[
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_manual_recovery.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_manual_recovery.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_finger_verify.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_finger_verify.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_farmer_profile_services.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_farmer_profile_services.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_edit_activity_profile.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_edit_activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farm_map_polygon.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farm_map_polygon.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_agent.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_agent.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer_search_server_details.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer_search_server_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\household_item_layout.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\household_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\scandoc_item_layout.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\scandoc_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_assign_farmer_aggregator_dialog.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_assign_farmer_aggregator_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\scandoc_profile_item_layout.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\scandoc_profile_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_send_bulk_sms.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_send_bulk_sms.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_no_farm.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_no_farm.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\household_search_activity.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\household_search_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cart_bottom_sheet.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\cart_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_farmer_activity_info.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_farmer_activity_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\farm_item_layout.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\farm_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_biometrics.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_biometrics.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\farmer_bottomsheet.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\farmer_bottomsheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_select_aggregator.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\dialog_select_aggregator.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_reg_preview.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_reg_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_actions.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_actions.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_receive_inputs.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_receive_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\farmer_profile_fragment.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\farmer_profile_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_view_service_providers.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_view_service_providers.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\farmer_search_agg_bottomsheet.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\farmer_search_agg_bottomsheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chart.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_chart.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farm_search_view.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farm_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_finger_enroll.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_finger_enroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_farms.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_farms.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer_transaction.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_scan_docs.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_scan_docs.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_map_reg_address.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_map_reg_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_export_farmers_assigned_agg.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_export_farmers_assigned_agg.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_household_relationship.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_household_relationship.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recycler_items.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\recycler_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_residential_map.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_residential_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_receive_inputs.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_receive_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ipsettings.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_ipsettings.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\household_search_item.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\household_search_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_faf_2.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_faf_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_item_layout.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recycler_service.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\recycler_service.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_report.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_edit_farminfo.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_edit_farminfo.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_alt.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_login_alt.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_farm_info.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_farm_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_basic_info.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_basic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer_search_aggregator.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer_search_aggregator.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_faf_3.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_faf_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_map_reg_farm.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_map_reg_farm.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saletrandetails.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_saletrandetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_automatic_recovery.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_automatic_recovery.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_remote_search.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_remote_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chartbackup.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_chartbackup.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_farmer_profile_summary.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_farmer_profile_summary.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signature.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_signature.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_household_relation.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_household_relation.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_edit_personal_profile.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_edit_personal_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search_timeline_dialog.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_search_timeline_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_inputdist_main.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_inputdist_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_export_farmers_assigned_agg.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_export_farmers_assigned_agg.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer_search_server.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer_search_server.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_details.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_template_dialog.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_template_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_aggregator_test.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_aggregator_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_address.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_edit_supportdocs.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_edit_supportdocs.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_another_farm.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_add_another_farm.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\photo_header.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\photo_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_farmer_search_aggregator.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_farmer_search_aggregator.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer2.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer2.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_recovery.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_recovery.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_dash_board.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_dash_board.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_another_activity.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_add_another_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_faf_1.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_faf_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_location_info.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_location_info.xml"
+    }
+]

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activities.ReceiveInputsActivity"
+        tools:showIn="@layout/activity_receive_inputs">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="data.json"
+            app:lottie_loop="true"
+            app:lottie_scale="10" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="5dp"
+            android:text="Awaiting inputs from input dealer"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:id="@+id/accept"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="564dp"
+            android:background="@color/viewBg"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/dosis_bold"
+                android:text="Accept or Decline?"
+                android:textSize="@dimen/text_size_bsmall"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/acceptbtn"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/background_btn_3"
+                android:fontFamily="@font/dosis_bold"
+                android:outlineProvider="none"
+                android:text="accept"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <Button
+                android:id="@+id/declinebtn"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/background_btn_2"
+                android:fontFamily="@font/dosis_bold"
+                android:outlineProvider="none"
+                android:text="decline"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_small" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_100"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/accept"
+            tools:layout_editor_absoluteX="0dp"
+            tools:listitem="@layout/item_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

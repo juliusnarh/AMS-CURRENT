@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.telpo.usb.finger"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" /> <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.telpo.usb.finger.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.telpo.usb.finger.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.telpo.usb.finger.App"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/cocoa"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.telpo.usb.finger.activities.SplashActivity"
+            android:theme="@style/SplashTheme" >
+        </activity>
+        <activity
+            android:name="com.telpo.usb.finger.activities.ExportFarmersAssignedAggActivity"
+            android:label="@string/title_activity_export_farmers_assigned_agg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.FarmerSearchAggregatorActivity"
+            android:label="@string/title_activity_farmer_search_aggregator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.telpo.usb.finger.activities.FarmerSearchServerDetailsActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.FarmerSearchServerActivity" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.FarmerActivity"
+            android:theme="@style/Fullscreen" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.telpo.usb.finger.activities.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Material.Dialog" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name="com.telpo.usb.finger.events.UploadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.telpo.usb.finger.uploadservice.broadcast.status" />
+                <!-- <action android:name="com.telpo.usb.finger.uploadservicedemo.uploadservice.broadcast.status" /> -->
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.telpo.usb.finger.hostmonitor.HostReachabilityReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.telpo.usb.finger.reachability" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.telpo.usb.finger.events.NotificationActionsReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.telpo.usb.finger.notification.action" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.telpo.usb.finger.utils.SmsBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="ucl.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.telpo.usb.finger" />
+
+        <service android:name="com.telpo.usb.finger.hostmonitor.HostMonitorService" />
+        <service
+            android:name="com.telpo.usb.finger.service.AmsService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.telpo.usb.finger.service.DownloadFailedFilesFromServer"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.telpo.usb.finger.service.LocationService"
+            android:process=":location_service" />
+        <service
+            android:name="com.telpo.usb.finger.service.Agentservice"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.telpo.usb.finger.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="com.telpo.usb.finger.utils.CropImageFileProvider"
+            android:authorities="com.telpo.usb.finger.utils.CropImageFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/crop_file_provider" />
+        </provider> <!-- uCrop cropping activity -->
+        <provider
+            android:name="com.telpo.usb.finger.utils.FarmerContentProvider"
+            android:authorities="com.telpo.usb.finger.utils.FarmerContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.telpo.usb.finger.activities.FarmerTransaction" />
+        <activity android:name="com.telpo.usb.finger.activities.AggregatorTest" />
+        <activity android:name="com.telpo.usb.finger.activities.FarmSearchView" />
+        <activity android:name="com.telpo.usb.finger.activities.DashBoardActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.FarmerSearchView" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.FingerEnrollActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.FingerpirntVerificationActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.RegistrationActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.SignatureActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.RegisteredActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.profile.ProfileActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.CameraActivity" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.HouseholdSearchActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.HouseholdRelationshipActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.profile.FarmMapPolygonActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.registration.ScanDocsActivity" />
+        <activity android:name="com.telpo.usb.finger.activities.input.distribution.FarmAssessmentForm" />
+        <activity android:name="com.telpo.usb.finger.activities.input.distribution.search.SearchActivity" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.ReceiveInputsActivity"
+            android:label="@string/title_activity_receive_inputs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.LoginActivityAlt"
+            android:label="@string/app_name"
+            android:theme="@style/login"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telpo.usb.finger.MainNavigationDrawerAlt"
+            android:theme="@style/MaterialDrawerTheme.Light.TranslucentStatus" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.SendBulkSmsActivity"
+            android:label="Send SMS" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.profile.ResidentialMapActivity"
+            android:label="@string/title_activity_residential_map" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.input.distribution.InputDistMainActivity"
+            android:label="@string/search_hint"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeIp"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.telpo.usb.finger.activities.input.distribution.OrderActivity"
+            android:parentActivityName="com.telpo.usb.finger.activities.input.distribution.InputDistMainActivity"
+            android:theme="@style/OrderTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.input.distribution.InputDistMainActivity" />
+        </activity>
+        <activity
+            android:name="com.telpo.usb.finger.activities.AgentActivity"
+            android:theme="@style/AppThemeIp" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.input.distribution.RecoveryActivity"
+            android:label="Input Recovery"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.input.distribution.DetailsActivity"
+            android:theme="@style/MaterialDrawerTheme.Light.TranslucentStatus" />
+        <activity
+            android:name="com.telpo.usb.finger.activities.input.distribution.SaletranDetailsActivity"
+            android:theme="@style/MaterialDrawerTheme.Light.TranslucentStatus" />
+
+        <service
+            android:name="net.gotev.uploadservice.UploadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="com.scanlibrary.ScanActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.telpo.usb.finger" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.telpo.usb.finger" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.telpo.usb.finger.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="net.gotev.hostmonitor.ConnectivityReceiver"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="net.gotev.hostmonitor.HostMonitor"
+            android:exported="false" />
+    </application>
+
+</manifest>

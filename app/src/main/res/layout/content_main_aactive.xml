@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainNavigationDrawerAlt"
+    tools:showIn="@layout/app_bar_main_aactive">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp">
+
+        <TextView
+            android:id="@+id/cms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="@string/cms"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cms_hnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cms"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/mes"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/amsimg1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignEnd="@+id/amsimg"
+            android:layout_alignBottom="@id/amsimg"
+            android:contentDescription="@string/empty"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="27dp"
+            android:src="@drawable/cocoa" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/amsimg"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/cms_hnt"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="plant_growing.json"
+            app:lottie_loop="true"
+            app:lottie_scale="5"
+            app:lottie_speed="2.0" />
+
+        <LinearLayout
+            android:id="@+id/summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/amsimg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="9dp"
+                        android:gravity="center"
+                        android:text="Registration Summary" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:text="Farmers" />
+
+                    <TextView
+                        android:id="@+id/farmers_count"
+                        android:text="0"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:text="Farms" />
+
+                    <TextView
+                        android:id="@+id/farms_count"
+                        android:text="0"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

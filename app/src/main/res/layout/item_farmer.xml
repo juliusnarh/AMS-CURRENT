@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/background_multiple_select_default"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/aggimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:transitionName="aggimg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/aggimg">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Narh, Julius"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_ssmall" />
+
+            <TextView
+                android:id="@+id/aggregatorid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:text="UCL-200-35"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_ssmall" />
+
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aggregatorid"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:text="0501546180"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_ssmall" />
+
+            <TextView
+                android:id="@+id/cropspeciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tel"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:text="Cowpea"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_ssmall"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/region_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cropspeciality"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Brong Ahafo, Kwamu south"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_ssmall"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+

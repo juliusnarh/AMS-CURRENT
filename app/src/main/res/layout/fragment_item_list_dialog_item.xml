@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/name_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/dosis_medium"
+                    android:text="Lake 601 White Maize"
+                    android:textSize="@dimen/text_size_bsmall" />
+
+                <TextView
+                    android:id="@+id/unitm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(50kg)"
+                    android:textSize="@dimen/text_size_bsmall"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/dosis_medium"
+                    android:text="x3"
+                    android:textSize="@dimen/text_size_bsmall" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_img"
+            android:layout_toEndOf="@+id/name_unit"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/app_font"
+            android:paddingEnd="5dp"
+            android:text="GHS 2050"
+            android:textAlignment="center"
+            android:textColor="@color/teal_800"
+            android:textSize="@dimen/text_size_bsmall"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.telpo.usb.finger.activities.LoginActivityAlt">
+
+
+        <!-- Login progress -->
+        <LinearLayout
+            android:id="@+id/login_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:lottie_autoPlay="true"
+                app:lottie_colorFilter="@color/accent"
+                app:lottie_fileName="spinner.json"
+                app:lottie_loop="true" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <RelativeLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:animateLayoutChanges="true">
+
+                <RelativeLayout
+                    android:id="@+id/cov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/cocoa"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/empty"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cocoa" />
+
+                    <LinearLayout
+                        android:id="@+id/cover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_toEndOf="@+id/cocoa"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dosis_light"
+                            android:text="@string/uclghana_alt"
+                            android:textColor="@color/md_red_500"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="@string/uclghana"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cocoa"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/background_edittext"
+                            android:drawableLeft="@drawable/twotone_account_circle_24"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Username"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/md_grey_700"
+                            android:textSize="15sp"
+                            app:validateEmpty="@{true}" />
+
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/background_edittext"
+                            android:drawableLeft="@drawable/twotone_lock_24"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/md_grey_700"
+                            android:textSize="15sp"
+                            app:validateEmpty="@{true}" />
+
+                        <Button
+                            android:id="@+id/btnlogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="24dp"
+                            android:background="@drawable/background_btn_1"
+                            android:padding="10dp"
+                            android:text="Login"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/link_signup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="No account yet? Create one"
+                            android:textSize="16dip"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</layout>

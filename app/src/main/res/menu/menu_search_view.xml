@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:title="@string/action_addfarmer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/verify_fingerprint"
+        android:icon="@drawable/fingerprint_verify"
+        android:title="@string/verify_farmer"
+        app:showAsAction="never" />
+</menu>

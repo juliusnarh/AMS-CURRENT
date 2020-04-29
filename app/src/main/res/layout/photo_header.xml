@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/round_account_circle_black_48"
+                app:civ_border_color="@color/black_trans80"
+                app:civ_border_width="1dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="@dimen/ic_plus_width"
+                android:layout_height="@dimen/ic_plus_width"
+                android:layout_alignEnd="@+id/profilePic"
+                android:layout_alignBottom="@id/profilePic"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="13dp"
+                android:src="@drawable/ic_plus"
+                app:civ_shadow="false" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/summaryfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_farmer_profile"
+                android:gravity="center"
+                android:text="@string/farmer_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/summarymobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_farmer_profile"
+                    android:drawableStart="@drawable/mobile"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
+                    android:text="@string/phone_no_eg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_ssmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/assign_to_aggregator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_farmer_profile"
+                    android:drawableStart="@drawable/ic_add_24px"
+                    android:gravity="center"
+                    android:text="@string/assign_to_aggregator_fbo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_ssmall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

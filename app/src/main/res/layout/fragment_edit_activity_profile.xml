@@ -1,0 +1,234 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.telpo.usb.finger.pojo.ActivityInfoPojo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minWidth="1000dp"
+        android:orientation="vertical"
+        android:padding="13dp"
+        tools:context="com.telpo.usb.finger.editfragments.EditActivityProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/boolgrpm"
+                            android:layout_gravity="center"
+                            android:checked="@={activity.boolgroupmember}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/farminggroup_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/farminggroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{activity.boolgroupmember}"
+                                android:hint="Member of a farming group?"
+                                android:inputType="textCapWords"
+                                android:text="@={activity.groupname}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/boolcopgrp"
+                            android:layout_gravity="center"
+                            android:checked="@={activity.boolcoopmember}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cooperativegroup_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cooperativegroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{activity.boolcoopmember}"
+                                android:hint="Member of a cooperative group?"
+                                android:inputType="textCapWords"
+                                android:text="@={activity.coopname}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/boolcincome"
+                            android:layout_gravity="center"
+                            android:checked="@={activity.boolcocoaincome , default=true}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cocoaincom_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cocoaincome"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{activity.boolcocoaincome ? false : true}"
+                                android:hint="Is Cocoa only source of income?"
+                                android:inputType="textCapWords"
+                                android:text="@={activity.incomesource}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/boolspe"
+                            android:layout_gravity="center"
+                            android:checked="@={activity.boolspecialty}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/specialtycocoa_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/specialtycocoa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:enabled="@{activity.boolspecialty}"
+                                android:focusable="false"
+                                android:hint="Involved in specialty cocoa?"
+                                android:text="@={activity.specialtycocoa}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/certification_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/certification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:enabled='@{activity.specialtycocoa.equals("Certified") ? true : false}'
+                                android:focusable="false"
+                                android:hint="If Certified type of cocoa specialty"
+                                android:text="@={activity.certified}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/fundingsource_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/fundingsource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Sources of funding"
+                                android:text="@={activity.fundingsource}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Close" />
+
+                    <Button
+                        android:id="@+id/btnsave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

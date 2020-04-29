@@ -1,0 +1,521 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="farmreg"
+            type="com.telpo.usb.finger.pojo.FarmRegistrationPojo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="1000dp"
+        android:orientation="vertical"
+        tools:context="com.telpo.usb.finger.profile.fragments.AddAnotherFarm">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/region_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtregion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Region"
+                                android:text="@={farmreg.region}"
+
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ownership_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ownership"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Ownership Source"
+                                android:text="@={farmreg.sourceofownership}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/community_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Community"
+                                android:inputType="textCapWords"
+                                android:text="@={farmreg.community}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/estabyear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtestabyear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Established Year"
+                                android:inputType="number"
+                                android:text="@={farmreg.establishedyear}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/landarea_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/landarea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Land Area"
+                                android:inputType="numberDecimal"
+                                android:text="@={farmreg.landarea}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cultarea_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cultarea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Cultivation Area"
+                                android:inputType="numberDecimal"
+                                android:text="@={farmreg.cultarea}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/shadetreeno_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/shadetreeno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="No. of Shade Trees"
+                                android:inputType="number"
+                                android:text="@={farmreg.shadetreeno}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/district_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/district"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="District"
+                                android:text="@={farmreg.district}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cocoatype_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cocoatype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Type of Farm"
+                                android:text="@={farmreg.typeoffarm}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/crop_variety_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/crop_variety"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Crop Variety"
+                                android:text="@={farmreg.cropvariety}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/fertused_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/fertused"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Fertilizer Used"
+                                android:text="@={farmreg.fertilizerused}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/farmyield_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/farmyield"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Farm Yield"
+                                android:text="@={farmreg.farmyield}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cropprotection_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cropprotection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Crop Protection"
+                                android:text="@={farmreg.cropprotection}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/chemicalused_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/chemicalused"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Chemical Used"
+                                android:text="@={farmreg.chemicalused}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/materialsource_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/materialsource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Planting materials source"
+                                android:text="@={farmreg.plantmaterialsrc}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/materialothersource_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/materialothersource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Specify if other"
+                                android:inputType="textCapWords"
+                                android:text="@={farmreg.otherplantmatsrc}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/laborsource_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/laborsource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Source of Labour"
+                                android:text="@={farmreg.laboursource}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/extentoinservice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@={farmreg.extension}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/provideorg_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/provideorg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:enabled="@{farmreg.extension}"
+                                android:focusable="false"
+                                android:hint="Organization providing Extension Services"
+                                android:text="@={farmreg.extensionorg}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/privorg_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/privorg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled='@{farmreg.extensionorg.get().equals("Private") ? true : false}'
+                                android:hint="Private Organization providing Extension Services"
+                                android:inputType="textCapWords"
+                                android:text="@={farmreg.privateextentionorg}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/swagroactive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="@={farmreg.boolagroactivity}" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/agricactive_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/agricactive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{farmreg.boolagroactivity}"
+                                android:hint="Other Agric Activities"
+                                android:inputType="textCapWords"
+                                android:text="@={farmreg.agroactivity}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btncancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="9dp"
+                        android:text="Cancel" />
+
+                    <Button
+                        android:id="@+id/btnsave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

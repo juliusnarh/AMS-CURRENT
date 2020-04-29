@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/order_card"
+    android:background="@color/white_alpha"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="100dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="100dp"
+    android:paddingBottom="10dp"
+    android:weightSum="3"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:showIn="@layout/activity_order">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:fontFamily="@font/app_font"
+        android:text="TOTAL"
+        android:textColor="@color/secondary_light"
+        android:textSize="@dimen/text_size_medium_up_up"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/total_Order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/app_font"
+        android:textColor="@color/secondary_light"
+        android:textSize="@dimen/text_size_medium_up_up"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/background_btn_3"
+        android:outlineProvider="paddedBounds"
+        android:text="@string/checkout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+</LinearLayout>

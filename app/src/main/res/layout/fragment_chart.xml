@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".agent.fragment.AllAgentFragment">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="androidx.fragment.app.Fragment" />
+
+        <variable
+            name="chart"
+            type="com.telpo.usb.finger.pojo.inputdistribution.pojo.ChartPojo" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/declaration_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:padding="5dp"
+                    android:text="FARMER DEMOGRAPHICS"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_bsmall"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:text="GENDER DISTRIBUTION"
+                    android:textColor="@color/md_orange_900"
+                    android:textSize="@dimen/text_size_ssmall"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vmore"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:scaleType="center"
+                            android:src="@drawable/round_error_black_24"
+                            android:tint="@color/md_orange_900" />
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/genderpiechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:text="AGE DISTRIBUTION"
+                    android:textColor="@color/md_orange_900"
+                    android:textSize="@dimen/text_size_ssmall"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/agebarchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="480dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:padding="5dp"
+                    android:text="INPUT SALE TRANSACTIONS"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_bsmall"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imore"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:scaleType="center"
+                            android:src="@drawable/round_error_black_24"
+                            android:tint="@color/md_orange_900" />
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/saletransaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:text="TOTAL INPUT SALES PER MONTH (GHS)"
+                    android:textColor="@color/md_orange_900"
+                    android:textSize="@dimen/text_size_ssmall"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/salestrantotalrevenue"
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:padding="5dp"
+                    android:text="RECOVERY TRANSACTIONS"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_bsmall"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/recoverytransactionpiechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/dosis_bold"
+                    android:text="RECOVERY TRANSACTIONS MADE TODAY SHOWN BY ACTUAL VALUES (BAGS)"
+                    android:textColor="@color/md_orange_900"
+                    android:textSize="@dimen/text_size_tiny"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/recoverytransactionlinechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="480dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</layout>

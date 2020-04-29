@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AMS-CURRENT.iml" filepath="$PROJECT_DIR$/AMS-CURRENT.iml" group="AMS-CURRENT" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AMS-CURRENT/app" />
+      <module fileurl="file://$PROJECT_DIR$/cameraviewlibrary/cameraviewlibrary.iml" filepath="$PROJECT_DIR$/cameraviewlibrary/cameraviewlibrary.iml" group="AMS-CURRENT/cameraviewlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/materialsteppers/materialsteppers.iml" filepath="$PROJECT_DIR$/materialsteppers/materialsteppers.iml" group="AMS-CURRENT/materialsteppers" />
+      <module fileurl="file://$PROJECT_DIR$/samlocationandgeocoding/samlocationandgeocoding.iml" filepath="$PROJECT_DIR$/samlocationandgeocoding/samlocationandgeocoding.iml" group="AMS-CURRENT/samlocationandgeocoding" />
+      <module fileurl="file://$PROJECT_DIR$/scandocslibrary/scandocslibrary.iml" filepath="$PROJECT_DIR$/scandocslibrary/scandocslibrary.iml" group="AMS-CURRENT/scandocslibrary" />
+    </modules>
+  </component>
+</project>

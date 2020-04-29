@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="androidx.core.app.ActivityCompat" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.FarmerActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:titleEnabled="true">
+
+                <com.arlib.floatingsearchview.FloatingSearchView
+                    android:id="@+id/floating_search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:elevation="20dp"
+                    app:floatingSearch_backgroundColor="@color/grey_100"
+                    app:floatingSearch_close_search_on_keyboard_dismiss="false"
+                    app:floatingSearch_dimBackground="false"
+                    app:floatingSearch_dismissOnOutsideTouch="true"
+                    app:floatingSearch_hideOverflowMenuWhenFocused="false"
+                    app:floatingSearch_leftActionMode="showSearch"
+                    app:floatingSearch_menu="@menu/menu_search_view"
+                    app:floatingSearch_searchBarMarginLeft="5dp"
+                    app:floatingSearch_searchBarMarginRight="5dp"
+                    app:floatingSearch_searchBarMarginTop="10dp"
+                    app:floatingSearch_searchHint="Search Farmer"
+                    app:floatingSearch_showSearchKey="true"
+                    app:floatingSearch_suggestionsListAnimDuration="250"
+                    app:layout_collapseMode="pin" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/recycler_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/search_server_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_remote_search"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/search_server"
+                        android:textColor="@color/grey_600"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/amsimg"
+                    android:layout_width="101dp"
+                    android:layout_height="87dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/cocoa" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:padding="1dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="300"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="25dp">
+
+                    <Button
+                        android:id="@+id/btnverify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_btn_1"
+                        android:drawableStart="@drawable/twotone_fingerprint_white_18"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/text_size_small"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/verify_farmer"
+                        android:textColor="@color/white" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="1dp"
+                    android:layout_marginBottom="8dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="300"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="50dp">
+
+                    <Button
+                        android:id="@+id/btnregister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/background_btn_1"
+                        android:drawableStart="@drawable/twotone_person_add_white_18"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/text_size_small"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/register_farmer"
+                        android:textColor="@color/white" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:padding="1dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="300"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="50dp">
+
+                    <Button
+                        android:id="@+id/btnsearchserver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_btn_1"
+                        android:drawableStart="@drawable/twotone_language_white_18"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/text_size_small"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Search on server"
+                        android:textColor="@color/white" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:padding="1dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="300"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="50dp">
+
+                    <Button
+                        android:id="@+id/btnsearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_btn_1"
+                        android:drawableStart="@drawable/round_search_white_18"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/text_size_small"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/search_farmer"
+                        android:textColor="@color/white" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:padding="1dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="#000000"
+                    app:mrl_rippleDimension="10dp"
+                    app:mrl_rippleDuration="300"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="20dp">
+
+                    <Button
+                        android:id="@+id/btn_search_aggregator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_btn_1"
+                        android:drawableStart="@drawable/ic_user_search"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/text_size_small"
+                        android:paddingStart="10dp"
+                        android:visibility="gone"
+                        android:paddingEnd="10dp"
+                        android:text="@string/search_farmer_aggregator"
+                        android:textColor="@color/white" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

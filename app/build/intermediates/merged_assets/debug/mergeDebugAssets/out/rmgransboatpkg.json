@@ -1,0 +1,42 @@
+[
+  {
+    "item": "Lake 601 White Maize",
+    "category": "seeds",
+    "quantity": 1,
+    "unitm": "10kg",
+    "subsidy": 30,
+    "openmarket": 250,
+    "supplier": "RMG-Ransboat",
+    "pdesc": "Lake 601 White Maize"
+  },
+  {
+    "item": "Landlord",
+    "category": "weedicides",
+    "quantity": 2,
+    "unitm": "l",
+    "subsidy": 15,
+    "openmarket": 20,
+    "supplier": "RMG-Ransboat",
+    "pdesc": "Landlord"
+  },
+  {
+    "item": "NPK 15-15-15",
+    "category": "fertilizers",
+    "quantity": 3,
+    "unitm": "50k",
+    "subsidy": 75,
+    "openmarket": 136,
+    "supplier": "RMG-Ransboat",
+    "pdesc": "NPK 15-15-15"
+  },
+  {
+    "item": "Urea",
+    "category": "fertilizers",
+    "quantity": 1,
+    "unitm": "50k",
+    "subsidy": 75,
+    "openmarket": 126,
+    "supplier": "RMG-Ransboat",
+    "pdesc": "Urea"
+  }
+]

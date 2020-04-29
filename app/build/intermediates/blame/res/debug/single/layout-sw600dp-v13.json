@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-sw600dp-v13\\recycler_service.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout-sw600dp\\recycler_service.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-sw600dp-v13\\recycler_items.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout-sw600dp\\recycler_items.xml"
+    }
+]

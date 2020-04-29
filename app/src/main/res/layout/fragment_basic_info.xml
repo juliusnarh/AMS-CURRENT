@@ -1,0 +1,527 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="basicreg"
+            type="com.telpo.usb.finger.pojo.BasicRegistration" />
+    </data>
+
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="com.telpo.usb.finger.registration.fragments.BasicInfoFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:shadowColor="@color/cardview_dark_background"
+                    android:text="Basic Info Registration"
+                    android:textColor="@color/text_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/txtpinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Personal Information"
+                        android:textColor="@color/text_color"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txtpinfo"
+                        android:background="@color/text_color" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/surname_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtsurname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Surname*"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.surname}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/othername_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtfirstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Firstname*"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.firstname}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/nationality_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="bottom"
+                            android:hint="Country*"
+                            android:text="@={basicreg.nationality}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/gender_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Gender*"
+                            android:text="@={basicreg.gender}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/bdate_layout"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/bdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Birth Date*"
+                                android:text="@={basicreg.dateofbirth}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                app:validateEmpty="@{true}" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/age_layout"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:hint="Age"
+                                android:inputType="number"
+                                android:text="@={basicreg.age}"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/bplace_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtbplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Birth Place"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.placeofbirth}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/hometown_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/hometown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Hometown"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.hometown}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/farmcomm_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/farmcomm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Farming Community*"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.farmcommunity}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/region_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/region"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Region*"
+                            android:text="@={basicreg.region}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/district_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/district"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="District*"
+                            android:text="@={basicreg.district}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/residential_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/residence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Residential Address"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.residentialaddr}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/telephone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/telephone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Telepone*"
+                            android:inputType="phone"
+                            android:text="@={basicreg.telephone}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/maritalstat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/maritalstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Marital Status*"
+                            android:text="@={basicreg.maritalstatus}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:text="@={basicreg.email}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/edu_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="Education Level"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.levelofeducation}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/post_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/postbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Post Office Box"
+                            android:inputType="textCapWords"
+                            android:text="@={basicreg.postofficebox}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/idtype_layout"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/idtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:entries="@array/idtypes"
+                            android:focusable="false"
+                            android:gravity="bottom"
+                            android:hint="ID Card Type*"
+                            android:text="@={basicreg.idtype}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            app:validateEmpty="@{true}" />
+
+                        />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/idnum_layout"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@android:style/TextAppearance.DeviceDefault.Small">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtidnum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="ID Card Number"
+                            android:inputType="textCapCharacters"
+                            android:text="@={basicreg.idnumber}"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/idcard" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
