@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:google-material-typeface:3.0.1.1.original@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-material-typeface-3.0.1.1.original.aar/38c84718e761731209aebe2484c26f4d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-material-typeface-3.0.1.1.original.aar/38c84718e761731209aebe2484c26f4d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-material-typeface-3.0.1.1.original.aar/97e2f6ecfe16c4c3e3432baca2b32351/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-material-typeface-3.0.1.1.original.aar/97e2f6ecfe16c4c3e3432baca2b32351/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-material-typeface-3.0.1.1.original.aar/97e2f6ecfe16c4c3e3432baca2b32351/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/google-material-typeface/3.0.1.1.original/7d83602ad44a64b384b5c0bda5478622b6a29d99/google-material-typeface-3.0.1.1.original-javadoc.jar!/" />

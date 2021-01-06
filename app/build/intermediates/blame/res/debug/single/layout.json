@@ -136,6 +136,10 @@
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_addinput.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\dialog_addinput.xml"
+    },
+    {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_export_farmers_assigned_agg.xml",
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_export_farmers_assigned_agg.xml"
     },
@@ -196,6 +200,10 @@
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_basic_info.xml"
     },
     {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_packages.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_packages.xml"
+    },
+    {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_farmer_search_aggregator.xml",
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_farmer_search_aggregator.xml"
     },
@@ -240,12 +248,20 @@
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_edit_personal_profile.xml"
     },
     {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_addpackage.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\dialog_addpackage.xml"
+    },
+    {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search_timeline_dialog.xml",
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_search_timeline_dialog.xml"
     },
     {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_inputdist_main.xml",
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\activity_inputdist_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_packages.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\content_packages.xml"
     },
     {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_export_farmers_assigned_agg.xml",
@@ -306,6 +322,10 @@
     {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_faf_1.xml",
         "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\fragment_faf_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_packagedetails.xml",
+        "source": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\src\\main\\res\\layout\\dialog_packagedetails.xml"
     },
     {
         "merged": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_location_info.xml",

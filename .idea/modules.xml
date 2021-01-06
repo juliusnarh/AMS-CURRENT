@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AMS-CURRENT.iml" filepath="$PROJECT_DIR$/AMS-CURRENT.iml" group="AMS-CURRENT" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AMS-CURRENT/app" />
-      <module fileurl="file://$PROJECT_DIR$/cameraviewlibrary/cameraviewlibrary.iml" filepath="$PROJECT_DIR$/cameraviewlibrary/cameraviewlibrary.iml" group="AMS-CURRENT/cameraviewlibrary" />
-      <module fileurl="file://$PROJECT_DIR$/materialsteppers/materialsteppers.iml" filepath="$PROJECT_DIR$/materialsteppers/materialsteppers.iml" group="AMS-CURRENT/materialsteppers" />
-      <module fileurl="file://$PROJECT_DIR$/samlocationandgeocoding/samlocationandgeocoding.iml" filepath="$PROJECT_DIR$/samlocationandgeocoding/samlocationandgeocoding.iml" group="AMS-CURRENT/samlocationandgeocoding" />
-      <module fileurl="file://$PROJECT_DIR$/scandocslibrary/scandocslibrary.iml" filepath="$PROJECT_DIR$/scandocslibrary/scandocslibrary.iml" group="AMS-CURRENT/scandocslibrary" />
+      <module fileurl="file://$PROJECT_DIR$/AMS-CURRENT.iml" filepath="$PROJECT_DIR$/AMS-CURRENT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AMS-CURRENT.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AMS-CURRENT.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cameraviewlibrary/AMS-CURRENT.cameraviewlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/cameraviewlibrary/AMS-CURRENT.cameraviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/materialsteppers/AMS-CURRENT.materialsteppers.iml" filepath="$PROJECT_DIR$/.idea/modules/materialsteppers/AMS-CURRENT.materialsteppers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samlocationandgeocoding/AMS-CURRENT.samlocationandgeocoding.iml" filepath="$PROJECT_DIR$/.idea/modules/samlocationandgeocoding/AMS-CURRENT.samlocationandgeocoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scandocslibrary/AMS-CURRENT.scandocslibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/scandocslibrary/AMS-CURRENT.scandocslibrary.iml" />
     </modules>
   </component>
 </project>

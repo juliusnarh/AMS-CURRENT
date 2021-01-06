@@ -1,14 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.Ilhasoft:data-binding-validator:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/02d57038297c31d87a9fd4f14728a781/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/02d57038297c31d87a9fd4f14728a781/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ilhasoft/data-binding-validator/1.0.0/63da6c4add1a83c1ab4655715aa0b35c4108cde5/data-binding-validator-1.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ilhasoft/data-binding-validator/1.0.0/144619e7a87eabe5bffbe8e904e9cac732fb1e7d/data-binding-validator-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ilhasoft/data-binding-validator/1.0.0/2d420bb5d11087c02a07ed3b21ae8426581642a0/data-binding-validator-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

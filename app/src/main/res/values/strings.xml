@@ -19,16 +19,17 @@
     <string name="add_service">Add Service</string>
     <string name="add_input">Add Input</string>
     <string name="price_item">GHS %.2f</string>
-    <string name="price_item2">GHS %.2f  </string>
     <string name="expected">%.2f bag(s)</string>
     <string name="weight">%.2f kg</string>
     <string name="weight2">%f kg</string>
     <string name="acre">%1$s acre(s)</string>
+    <string name="price_quantity">GHS %1$d   x%2$d</string>
     <string name="price">%.2f</string>
     <string name="farm_count">%d</string>
     <string name="pricealt">GHS %1$s x%2$s</string>
     <string name="sms_info">Charges apply when sending sms to aggregators. please make sure you have enough credit to send messages</string>
     <string name="numberselected">%d Farmer(s) Selected</string>
+    <string name="preview">%1$s \n%2$s \t\t x%3$s</string>
 
     <string name="cartitem">%s items in cart</string>
     <string name="new_input">Add new input</string>
@@ -166,7 +167,7 @@
     <string name="order_detail">Farmer Details (x50)</string>
     <string name="actual_order_detail">%1$s (x%2$s)</string>
     <string name="actual_order_detail_coupon">%1$s \tx%2$s%3$s</string>
-    <string name="xquantity">x%1$s</string>
+    <string name="xquantity">x%1$d</string>
     <string name="for_coupon">%1$s:%2$s</string>
     <string name="geocoord">%1$s - %2$s, %3$s, %4$s</string>
     <string name="my_cart">My Cart</string>
@@ -771,4 +772,6 @@
     <string name="tap_retry">Tap to retry</string>
     <string name="please_wait_loading_aggregator_list">Please wait… Loading aggregator list</string>
     <string name="content_desc_close_dialog">close dialog</string>
+    <string name="unit">Unit</string>
+    <string name="noofitems"># Of Items: %s</string>
 </resources>

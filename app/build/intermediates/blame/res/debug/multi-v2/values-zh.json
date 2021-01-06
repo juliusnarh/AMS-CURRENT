@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-android-crop-1.0.1.aar\\f07e4b61bcad5c5e946a2371b2d4bc70\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-android-crop-1.0.1.aar\\abacdac42239da44771995491ac11873\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-ucrop-2.2.2.aar\\78bbbad7a1afa61c9dffadc95035eb46\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.4.aar\\4281c801ef35adbb121da8d73aca50e7\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

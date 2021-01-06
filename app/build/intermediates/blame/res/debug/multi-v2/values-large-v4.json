@@ -4,41 +4,7 @@
             "outputFile": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-commons-0.9.6.0.aar\\c959601e8fa3c9d848c63dc4caa11e49\\res\\values-large-v4\\values-large-v4.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "58",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "580",
-                        "endColumns": "58",
-                        "endOffsets": "634"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-android-crop-1.0.1.aar\\f07e4b61bcad5c5e946a2371b2d4bc70\\res\\values-large\\values-large.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "172",
-                        "endColumns": "47",
-                        "endOffsets": "215"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "532",
-                        "endColumns": "47",
-                        "endOffsets": "575"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\fb308c148b728c7d79404e8d3302db9a\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0.aar\\c57bc72580603fdb046c5d0ebab6c188\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -55,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\0a4ccfe79b1323e53091437aafc383d2\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-commons-0.9.6.0.aar\\9c42c9d7a4e9b83d41d1d0968cccaa62\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "580",
+                        "endColumns": "58",
+                        "endOffsets": "634"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-android-crop-1.0.1.aar\\abacdac42239da44771995491ac11873\\res\\values-large\\values-large.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "172",
+                        "endColumns": "47",
+                        "endOffsets": "215"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "532",
+                        "endColumns": "47",
+                        "endOffsets": "575"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\df524169235bf81c58a2f0b50feef641\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

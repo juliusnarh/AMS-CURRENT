@@ -24,6 +24,7 @@ import com.telpo.usb.finger.databinding.ActivityFingerVerifyBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityHouseholdRelationshipBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityInputdistMainBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityLoginAltBindingImpl;
+import com.telpo.usb.finger.databinding.ActivityPackagesBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityReceiveInputsBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityRecoveryBindingImpl;
 import com.telpo.usb.finger.databinding.ActivityResidentialMapBindingImpl;
@@ -34,8 +35,12 @@ import com.telpo.usb.finger.databinding.ActivitySignatureBindingImpl;
 import com.telpo.usb.finger.databinding.CartBottomSheetBindingImpl;
 import com.telpo.usb.finger.databinding.ContentExportFarmersAssignedAggBindingImpl;
 import com.telpo.usb.finger.databinding.ContentFarmerSearchAggregatorBindingImpl;
+import com.telpo.usb.finger.databinding.ContentPackagesBindingImpl;
 import com.telpo.usb.finger.databinding.ContentReceiveInputsBindingImpl;
 import com.telpo.usb.finger.databinding.ContentRemoteSearchBindingImpl;
+import com.telpo.usb.finger.databinding.DialogAddinputBindingImpl;
+import com.telpo.usb.finger.databinding.DialogAddpackageBindingImpl;
+import com.telpo.usb.finger.databinding.DialogPackagedetailsBindingImpl;
 import com.telpo.usb.finger.databinding.DialogSelectAggregatorBindingImpl;
 import com.telpo.usb.finger.databinding.FarmDataBindingImpl;
 import com.telpo.usb.finger.databinding.FarmerBottomsheetBindingImpl;
@@ -133,127 +138,137 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYLOGINALT = 18;
 
-  private static final int LAYOUT_ACTIVITYRECEIVEINPUTS = 19;
+  private static final int LAYOUT_ACTIVITYPACKAGES = 19;
 
-  private static final int LAYOUT_ACTIVITYRECOVERY = 20;
+  private static final int LAYOUT_ACTIVITYRECEIVEINPUTS = 20;
 
-  private static final int LAYOUT_ACTIVITYRESIDENTIALMAP = 21;
+  private static final int LAYOUT_ACTIVITYRECOVERY = 21;
 
-  private static final int LAYOUT_ACTIVITYSALETRANDETAILS = 22;
+  private static final int LAYOUT_ACTIVITYRESIDENTIALMAP = 22;
 
-  private static final int LAYOUT_ACTIVITYSCANDOCS = 23;
+  private static final int LAYOUT_ACTIVITYSALETRANDETAILS = 23;
 
-  private static final int LAYOUT_ACTIVITYSENDBULKSMS = 24;
+  private static final int LAYOUT_ACTIVITYSCANDOCS = 24;
 
-  private static final int LAYOUT_ACTIVITYSIGNATURE = 25;
+  private static final int LAYOUT_ACTIVITYSENDBULKSMS = 25;
 
-  private static final int LAYOUT_CARTBOTTOMSHEET = 26;
+  private static final int LAYOUT_ACTIVITYSIGNATURE = 26;
 
-  private static final int LAYOUT_CONTENTEXPORTFARMERSASSIGNEDAGG = 27;
+  private static final int LAYOUT_CARTBOTTOMSHEET = 27;
 
-  private static final int LAYOUT_CONTENTFARMERSEARCHAGGREGATOR = 28;
+  private static final int LAYOUT_CONTENTEXPORTFARMERSASSIGNEDAGG = 28;
 
-  private static final int LAYOUT_CONTENTRECEIVEINPUTS = 29;
+  private static final int LAYOUT_CONTENTFARMERSEARCHAGGREGATOR = 29;
 
-  private static final int LAYOUT_CONTENTREMOTESEARCH = 30;
+  private static final int LAYOUT_CONTENTPACKAGES = 30;
 
-  private static final int LAYOUT_DIALOGSELECTAGGREGATOR = 31;
+  private static final int LAYOUT_CONTENTRECEIVEINPUTS = 31;
 
-  private static final int LAYOUT_FARMITEMLAYOUT = 32;
+  private static final int LAYOUT_CONTENTREMOTESEARCH = 32;
 
-  private static final int LAYOUT_FARMERBOTTOMSHEET = 33;
+  private static final int LAYOUT_DIALOGADDINPUT = 33;
 
-  private static final int LAYOUT_FARMERPROFILEFRAGMENT = 34;
+  private static final int LAYOUT_DIALOGADDPACKAGE = 34;
 
-  private static final int LAYOUT_FARMERSEARCHAGGBOTTOMSHEET = 35;
+  private static final int LAYOUT_DIALOGPACKAGEDETAILS = 35;
 
-  private static final int LAYOUT_FRAGMENTACTIONS = 36;
+  private static final int LAYOUT_DIALOGSELECTAGGREGATOR = 36;
 
-  private static final int LAYOUT_FRAGMENTADDANOTHERACTIVITY = 37;
+  private static final int LAYOUT_FARMITEMLAYOUT = 37;
 
-  private static final int LAYOUT_FRAGMENTADDANOTHERFARM = 38;
+  private static final int LAYOUT_FARMERBOTTOMSHEET = 38;
 
-  private static final int LAYOUT_FRAGMENTADDRESS = 39;
+  private static final int LAYOUT_FARMERPROFILEFRAGMENT = 39;
 
-  private static final int LAYOUT_FRAGMENTASSIGNFARMERAGGREGATORDIALOG = 40;
+  private static final int LAYOUT_FARMERSEARCHAGGBOTTOMSHEET = 40;
 
-  private static final int LAYOUT_FRAGMENTAUTOMATICRECOVERY = 41;
+  private static final int LAYOUT_FRAGMENTACTIONS = 41;
 
-  private static final int LAYOUT_FRAGMENTBASICINFO = 42;
+  private static final int LAYOUT_FRAGMENTADDANOTHERACTIVITY = 42;
 
-  private static final int LAYOUT_FRAGMENTBIOMETRICS = 43;
+  private static final int LAYOUT_FRAGMENTADDANOTHERFARM = 43;
 
-  private static final int LAYOUT_FRAGMENTCHART = 44;
+  private static final int LAYOUT_FRAGMENTADDRESS = 44;
 
-  private static final int LAYOUT_FRAGMENTCHARTBACKUP = 45;
+  private static final int LAYOUT_FRAGMENTASSIGNFARMERAGGREGATORDIALOG = 45;
 
-  private static final int LAYOUT_FRAGMENTEDITACTIVITYPROFILE = 46;
+  private static final int LAYOUT_FRAGMENTAUTOMATICRECOVERY = 46;
 
-  private static final int LAYOUT_FRAGMENTEDITFARMINFO = 47;
+  private static final int LAYOUT_FRAGMENTBASICINFO = 47;
 
-  private static final int LAYOUT_FRAGMENTEDITPERSONALPROFILE = 48;
+  private static final int LAYOUT_FRAGMENTBIOMETRICS = 48;
 
-  private static final int LAYOUT_FRAGMENTEDITSUPPORTDOCS = 49;
+  private static final int LAYOUT_FRAGMENTCHART = 49;
 
-  private static final int LAYOUT_FRAGMENTFAF1 = 50;
+  private static final int LAYOUT_FRAGMENTCHARTBACKUP = 50;
 
-  private static final int LAYOUT_FRAGMENTFAF2 = 51;
+  private static final int LAYOUT_FRAGMENTEDITACTIVITYPROFILE = 51;
 
-  private static final int LAYOUT_FRAGMENTFAF3 = 52;
+  private static final int LAYOUT_FRAGMENTEDITFARMINFO = 52;
 
-  private static final int LAYOUT_FRAGMENTFARMINFO = 53;
+  private static final int LAYOUT_FRAGMENTEDITPERSONALPROFILE = 53;
 
-  private static final int LAYOUT_FRAGMENTFARMERACTIVITYINFO = 54;
+  private static final int LAYOUT_FRAGMENTEDITSUPPORTDOCS = 54;
 
-  private static final int LAYOUT_FRAGMENTFARMERPROFILESERVICES = 55;
+  private static final int LAYOUT_FRAGMENTFAF1 = 55;
 
-  private static final int LAYOUT_FRAGMENTFARMERPROFILESUMMARY = 56;
+  private static final int LAYOUT_FRAGMENTFAF2 = 56;
 
-  private static final int LAYOUT_FRAGMENTFARMS = 57;
+  private static final int LAYOUT_FRAGMENTFAF3 = 57;
 
-  private static final int LAYOUT_FRAGMENTHOME = 58;
+  private static final int LAYOUT_FRAGMENTFARMINFO = 58;
 
-  private static final int LAYOUT_FRAGMENTHOUSEHOLDRELATION = 59;
+  private static final int LAYOUT_FRAGMENTFARMERACTIVITYINFO = 59;
 
-  private static final int LAYOUT_FRAGMENTIPSETTINGS = 60;
+  private static final int LAYOUT_FRAGMENTFARMERPROFILESERVICES = 60;
 
-  private static final int LAYOUT_FRAGMENTLOCATIONINFO = 61;
+  private static final int LAYOUT_FRAGMENTFARMERPROFILESUMMARY = 61;
 
-  private static final int LAYOUT_FRAGMENTMANUALRECOVERY = 62;
+  private static final int LAYOUT_FRAGMENTFARMS = 62;
 
-  private static final int LAYOUT_FRAGMENTMAPREGADDRESS = 63;
+  private static final int LAYOUT_FRAGMENTHOME = 63;
 
-  private static final int LAYOUT_FRAGMENTMAPREGFARM = 64;
+  private static final int LAYOUT_FRAGMENTHOUSEHOLDRELATION = 64;
 
-  private static final int LAYOUT_FRAGMENTNOFARM = 65;
+  private static final int LAYOUT_FRAGMENTIPSETTINGS = 65;
 
-  private static final int LAYOUT_FRAGMENTREGPREVIEW = 66;
+  private static final int LAYOUT_FRAGMENTLOCATIONINFO = 66;
 
-  private static final int LAYOUT_FRAGMENTREPORT = 67;
+  private static final int LAYOUT_FRAGMENTMANUALRECOVERY = 67;
 
-  private static final int LAYOUT_FRAGMENTSEARCHTIMELINEDIALOG = 68;
+  private static final int LAYOUT_FRAGMENTMAPREGADDRESS = 68;
 
-  private static final int LAYOUT_FRAGMENTTEMPLATEDIALOG = 69;
+  private static final int LAYOUT_FRAGMENTMAPREGFARM = 69;
 
-  private static final int LAYOUT_FRAGMENTVIEWSERVICEPROVIDERS = 70;
+  private static final int LAYOUT_FRAGMENTNOFARM = 70;
 
-  private static final int LAYOUT_HOUSEHOLDITEMLAYOUT = 71;
+  private static final int LAYOUT_FRAGMENTREGPREVIEW = 71;
 
-  private static final int LAYOUT_HOUSEHOLDSEARCHACTIVITY = 72;
+  private static final int LAYOUT_FRAGMENTREPORT = 72;
 
-  private static final int LAYOUT_HOUSEHOLDSEARCHITEM = 73;
+  private static final int LAYOUT_FRAGMENTSEARCHTIMELINEDIALOG = 73;
 
-  private static final int LAYOUT_PHOTOHEADER = 74;
+  private static final int LAYOUT_FRAGMENTTEMPLATEDIALOG = 74;
 
-  private static final int LAYOUT_RECYCLERITEMS = 75;
+  private static final int LAYOUT_FRAGMENTVIEWSERVICEPROVIDERS = 75;
 
-  private static final int LAYOUT_RECYCLERSERVICE = 76;
+  private static final int LAYOUT_HOUSEHOLDITEMLAYOUT = 76;
 
-  private static final int LAYOUT_SCANDOCITEMLAYOUT = 77;
+  private static final int LAYOUT_HOUSEHOLDSEARCHACTIVITY = 77;
 
-  private static final int LAYOUT_SCANDOCPROFILEITEMLAYOUT = 78;
+  private static final int LAYOUT_HOUSEHOLDSEARCHITEM = 78;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(78);
+  private static final int LAYOUT_PHOTOHEADER = 79;
+
+  private static final int LAYOUT_RECYCLERITEMS = 80;
+
+  private static final int LAYOUT_RECYCLERSERVICE = 81;
+
+  private static final int LAYOUT_SCANDOCITEMLAYOUT = 82;
+
+  private static final int LAYOUT_SCANDOCPROFILEITEMLAYOUT = 83;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(83);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_agent, LAYOUT_ACTIVITYAGENT);
@@ -274,6 +289,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_inputdist_main, LAYOUT_ACTIVITYINPUTDISTMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_item_layout, LAYOUT_ACTIVITYITEMLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_login_alt, LAYOUT_ACTIVITYLOGINALT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_packages, LAYOUT_ACTIVITYPACKAGES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_receive_inputs, LAYOUT_ACTIVITYRECEIVEINPUTS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_recovery, LAYOUT_ACTIVITYRECOVERY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.activity_residential_map, LAYOUT_ACTIVITYRESIDENTIALMAP);
@@ -284,8 +300,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.cart_bottom_sheet, LAYOUT_CARTBOTTOMSHEET);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.content_export_farmers_assigned_agg, LAYOUT_CONTENTEXPORTFARMERSASSIGNEDAGG);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.content_farmer_search_aggregator, LAYOUT_CONTENTFARMERSEARCHAGGREGATOR);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.content_packages, LAYOUT_CONTENTPACKAGES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.content_receive_inputs, LAYOUT_CONTENTRECEIVEINPUTS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.content_remote_search, LAYOUT_CONTENTREMOTESEARCH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.dialog_addinput, LAYOUT_DIALOGADDINPUT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.dialog_addpackage, LAYOUT_DIALOGADDPACKAGE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.dialog_packagedetails, LAYOUT_DIALOGPACKAGEDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.dialog_select_aggregator, LAYOUT_DIALOGSELECTAGGREGATOR);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.farm_item_layout, LAYOUT_FARMITEMLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.telpo.usb.finger.R.layout.farmer_bottomsheet, LAYOUT_FARMERBOTTOMSHEET);
@@ -447,6 +467,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         throw new IllegalArgumentException("The tag for activity_login_alt is invalid. Received: " + tag);
       }
+      case  LAYOUT_ACTIVITYPACKAGES: {
+        if ("layout/activity_packages_0".equals(tag)) {
+          return new ActivityPackagesBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_packages is invalid. Received: " + tag);
+      }
       case  LAYOUT_ACTIVITYRECEIVEINPUTS: {
         if ("layout/activity_receive_inputs_0".equals(tag)) {
           return new ActivityReceiveInputsBindingImpl(component, view);
@@ -507,6 +533,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         throw new IllegalArgumentException("The tag for content_farmer_search_aggregator is invalid. Received: " + tag);
       }
+      case  LAYOUT_CONTENTPACKAGES: {
+        if ("layout/content_packages_0".equals(tag)) {
+          return new ContentPackagesBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for content_packages is invalid. Received: " + tag);
+      }
       case  LAYOUT_CONTENTRECEIVEINPUTS: {
         if ("layout/content_receive_inputs_0".equals(tag)) {
           return new ContentReceiveInputsBindingImpl(component, view);
@@ -518,6 +550,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           return new ContentRemoteSearchBindingImpl(component, view);
         }
         throw new IllegalArgumentException("The tag for content_remote_search is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGADDINPUT: {
+        if ("layout/dialog_addinput_0".equals(tag)) {
+          return new DialogAddinputBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_addinput is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGADDPACKAGE: {
+        if ("layout/dialog_addpackage_0".equals(tag)) {
+          return new DialogAddpackageBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_addpackage is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGPACKAGEDETAILS: {
+        if ("layout/dialog_packagedetails_0".equals(tag)) {
+          return new DialogPackagedetailsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_packagedetails is invalid. Received: " + tag);
       }
       case  LAYOUT_DIALOGSELECTAGGREGATOR: {
         if ("layout/dialog_select_aggregator_0".equals(tag)) {
@@ -609,6 +659,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         throw new IllegalArgumentException("The tag for fragment_chartbackup is invalid. Received: " + tag);
       }
+    }
+    return null;
+  }
+
+  private final ViewDataBinding internalGetViewDataBinding1(DataBindingComponent component,
+      View view, int internalId, Object tag) {
+    switch(internalId) {
       case  LAYOUT_FRAGMENTEDITACTIVITYPROFILE: {
         if ("layout/fragment_edit_activity_profile_0".equals(tag)) {
           return new FragmentEditActivityProfileBindingImpl(component, view);
@@ -639,13 +696,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         throw new IllegalArgumentException("The tag for fragment_faf_1 is invalid. Received: " + tag);
       }
-    }
-    return null;
-  }
-
-  private final ViewDataBinding internalGetViewDataBinding1(DataBindingComponent component,
-      View view, int internalId, Object tag) {
-    switch(internalId) {
       case  LAYOUT_FRAGMENTFAF2: {
         if ("layout/fragment_faf_2_0".equals(tag)) {
           return new FragmentFaf2BindingImpl(component, view);
@@ -913,7 +963,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(80);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(85);
 
     static {
       sKeys.put("layout/activity_agent_0", com.telpo.usb.finger.R.layout.activity_agent);
@@ -934,6 +984,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_inputdist_main_0", com.telpo.usb.finger.R.layout.activity_inputdist_main);
       sKeys.put("layout/activity_item_layout_0", com.telpo.usb.finger.R.layout.activity_item_layout);
       sKeys.put("layout/activity_login_alt_0", com.telpo.usb.finger.R.layout.activity_login_alt);
+      sKeys.put("layout/activity_packages_0", com.telpo.usb.finger.R.layout.activity_packages);
       sKeys.put("layout/activity_receive_inputs_0", com.telpo.usb.finger.R.layout.activity_receive_inputs);
       sKeys.put("layout/activity_recovery_0", com.telpo.usb.finger.R.layout.activity_recovery);
       sKeys.put("layout/activity_residential_map_0", com.telpo.usb.finger.R.layout.activity_residential_map);
@@ -944,8 +995,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/cart_bottom_sheet_0", com.telpo.usb.finger.R.layout.cart_bottom_sheet);
       sKeys.put("layout/content_export_farmers_assigned_agg_0", com.telpo.usb.finger.R.layout.content_export_farmers_assigned_agg);
       sKeys.put("layout/content_farmer_search_aggregator_0", com.telpo.usb.finger.R.layout.content_farmer_search_aggregator);
+      sKeys.put("layout/content_packages_0", com.telpo.usb.finger.R.layout.content_packages);
       sKeys.put("layout/content_receive_inputs_0", com.telpo.usb.finger.R.layout.content_receive_inputs);
       sKeys.put("layout/content_remote_search_0", com.telpo.usb.finger.R.layout.content_remote_search);
+      sKeys.put("layout/dialog_addinput_0", com.telpo.usb.finger.R.layout.dialog_addinput);
+      sKeys.put("layout/dialog_addpackage_0", com.telpo.usb.finger.R.layout.dialog_addpackage);
+      sKeys.put("layout/dialog_packagedetails_0", com.telpo.usb.finger.R.layout.dialog_packagedetails);
       sKeys.put("layout/dialog_select_aggregator_0", com.telpo.usb.finger.R.layout.dialog_select_aggregator);
       sKeys.put("layout/farm_item_layout_0", com.telpo.usb.finger.R.layout.farm_item_layout);
       sKeys.put("layout/farmer_bottomsheet_0", com.telpo.usb.finger.R.layout.farmer_bottomsheet);

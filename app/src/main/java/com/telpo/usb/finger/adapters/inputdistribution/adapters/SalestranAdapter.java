@@ -20,6 +20,7 @@ import com.telpo.usb.finger.interfaces.SaletranClickListener;
 import com.telpo.usb.finger.utils.AndroidUtils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -60,6 +61,13 @@ public class SalestranAdapter extends RecyclerView.Adapter<SalestranAdapter.MyVi
 
             orderdetails.append("~");
             quantities.append("~");
+
+            for(Iterator<Sales> it = salesList.iterator(); it.hasNext();) {
+                Sales s = it.next();
+                if(s.getQuantity() == 0) {
+                    it.remove();
+                }
+            }
 
             holder.farmerimg.setImageDrawable(AndroidUtils.arraytodrawable(AndroidUtils.loadFarmerImg(salestran.getFarmerid(), res), mContext));
             holder.transid.setText(salestran.getTransactionid());

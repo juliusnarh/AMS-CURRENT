@@ -4,24 +4,7 @@
             "outputFile": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialize-1.1.2.aar\\aea72df6f3592aa8d1a2f7fc34defa37\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "54",
-                        "endOffsets": "105"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1237",
-                        "endColumns": "54",
-                        "endOffsets": "1287"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-core-0.9.6.0.aar\\63f317798c6dd08d91da395e21aa7ff1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-core-0.9.6.0.aar\\778955dcd68bca81ad36e57f8545265c\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,32 +13,15 @@
                         "endOffsets": "102"
                     },
                     "to": {
-                        "startLines": "21",
+                        "startLines": "22",
                         "startColumns": "4",
-                        "startOffsets": "1292",
+                        "startOffsets": "1331",
                         "endColumns": "51",
-                        "endOffsets": "1339"
+                        "endOffsets": "1378"
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-1.0.0.aar\\41aae2ad69bd5c91dca7c81ffc57c216\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,124",
-                        "endColumns": "68,68",
-                        "endOffsets": "119,188"
-                    },
-                    "to": {
-                        "startLines": "22,23",
-                        "startColumns": "4,4",
-                        "startOffsets": "1344,1413",
-                        "endColumns": "68,68",
-                        "endOffsets": "1408,1477"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialdrawer-6.0.9.aar\\895c4d486f4b07d28c60bce3355a589a\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialdrawer-6.0.9.aar\\7a6662ffdbc7c6697bddd7864da3781e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -64,40 +30,81 @@
                         "endOffsets": "114"
                     },
                     "to": {
-                        "startLines": "19",
+                        "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "1173",
+                        "startOffsets": "1212",
                         "endColumns": "63",
-                        "endOffsets": "1232"
+                        "endOffsets": "1271"
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\0a4ccfe79b1323e53091437aafc383d2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialize-1.1.2.aar\\ad4bcd78b94b8868b95dec1e417c3571\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "1276",
+                        "endColumns": "54",
+                        "endOffsets": "1326"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-1.1.0.aar\\7c39e7a240e8f321b98378c3f0492113\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,94,163",
+                        "endColumns": "38,68,68",
+                        "endOffsets": "89,158,227"
+                    },
+                    "to": {
+                        "startLines": "2,23,24",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,1383,1452",
+                        "endColumns": "38,68,68",
+                        "endOffsets": "89,1447,1516"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\df524169235bf81c58a2f0b50feef641\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "94,163,232,302,376,452,511,582",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "158,227,297,371,447,506,577,645"
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\fb308c148b728c7d79404e8d3302db9a\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0.aar\\c57bc72580603fdb046c5d0ebab6c188\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,115,185,256,328,386,444,553,617,680",
-                        "endLines": "2,3,4,5,6,7,9,10,11,15",
-                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
-                        "endOffsets": "110,180,251,323,381,439,548,612,675,847"
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,673,732,795",
+                        "endLines": "2,3,4,5,6,7,9,10,11,12,13,17",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,668,727,790,962"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,14,15,16,18,24,25",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1109,1482,1545",
-                        "endLines": "10,11,12,13,14,15,17,18,24,28",
-                        "endColumns": "59,69,70,71,57,57,10,63,62,10",
-                        "endOffsets": "666,736,807,879,937,995,1104,1168,1540,1712"
+                        "startLines": "11,12,13,14,15,16,17,19,25,26,27,28",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "650,710,780,851,923,981,1039,1148,1521,1577,1636,1699",
+                        "endLines": "11,12,13,14,15,16,18,19,25,26,27,31",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "705,775,846,918,976,1034,1143,1207,1572,1631,1694,1866"
                     }
                 }
             ]

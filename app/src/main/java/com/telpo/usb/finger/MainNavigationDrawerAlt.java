@@ -63,8 +63,10 @@ import com.telpo.usb.finger.activities.ExportFarmersAssignedAggActivity;
 import com.telpo.usb.finger.activities.FarmSearchView;
 import com.telpo.usb.finger.activities.FarmerActivity;
 import com.telpo.usb.finger.activities.LoginActivityAlt;
+import com.telpo.usb.finger.activities.PackagesActivity;
 import com.telpo.usb.finger.activities.ReceiveInputsActivity;
 import com.telpo.usb.finger.activities.SendBulkSmsActivity;
+import com.telpo.usb.finger.dialogforms.AddInputDialog;
 import com.telpo.usb.finger.editfragments.IPSettingsFragment;
 import com.telpo.usb.finger.entities.ActivityInfo;
 import com.telpo.usb.finger.entities.Aggregator;
@@ -189,9 +191,7 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
         setContentView(R.layout.activity_main_navigation_alt);
         setupWindowAnimations();
         Toolbar toolbar = findViewById(R.id.toolbar);
-        requestQueue = Volley.newRequestQueue(getApplicationContext());
         setupToolbar(toolbar);
-        new DeleteFarmers().execute();
         setupLayoutViews();
         setupBackupClass();
         setupClickListeners();
@@ -231,19 +231,16 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(R.string.farmer).withIcon(FontAwesome.Icon.faw_user).withIdentifier(1).withSelectable(false),
                         new PrimaryDrawerItem().withName(R.string.aggregator).withIcon(FontAwesome.Icon.faw_user_secret).withIdentifier(2).withSelectable(false),
-                        new PrimaryDrawerItem().withName("Receive Inputs").withIcon(FontAwesome.Icon.faw_cart_arrow_down).withIdentifier(8).withSelectable(false),
+                        new PrimaryDrawerItem().withName("Add Inputs").withIcon(FontAwesome.Icon.faw_cart_plus).withIdentifier(3).withSelectable(false),
+                        new PrimaryDrawerItem().withName("View Packages").withIcon(FontAwesome.Icon.faw_box).withIdentifier(4).withSelectable(true),
+                        new PrimaryDrawerItem().withName("Receive Inputs").withIcon(FontAwesome.Icon.faw_cart_arrow_down).withIdentifier(5).withSelectable(false),
                         new PrimaryDrawerItem().withName("Send Message To Farmers").withIcon(FontAwesome.Icon.faw_comment_dots).withIdentifier(6).withSelectable(false),
-//                        new PrimaryDrawerItem().withName(R.string.lbc).withIcon(FontAwesome.Icon.faw_landmark).withIdentifier(3).withSelectable(false),
-//                        new PrimaryDrawerItem().withName(R.string.buying_centers).withIcon(FontAwesome.Icon.faw_eye).withIdentifier(4).withSelectable(false),
-//                        new PrimaryDrawerItem().withName(R.string.accredited).withIcon(FontAwesome.Icon.faw_clipboard_list).withIdentifier(5).withSelectable(false),
-//                        new PrimaryDrawerItem().withName(R.string.purchasing).withIcon(FontAwesome.Icon.faw_clipboard_check).withIdentifier(7).withSelectable(false),
-                        new PrimaryDrawerItem().withName(R.string.settings).withIcon(FontAwesome.Icon.faw_cog).withIdentifier(9).withSelectable(false),
-                        new PrimaryDrawerItem().withName(R.string.readcsv).withIcon(FontAwesome.Icon.faw_database).withIdentifier(10).withSelectable(false),
-                        new PrimaryDrawerItem().withName(R.string.sync).withIcon(FontAwesome.Icon.faw_sync).withIdentifier(11).withSelectable(false).withBadgeStyle(new BadgeStyle().withTextColor(Color.WHITE).withColorRes(R.color.secondary_light)),
-                        new PrimaryDrawerItem().withName(R.string.logout).withIcon(FontAwesome.Icon.faw_sign_out_alt).withIdentifier(12).withSelectable(false),
-                        new PrimaryDrawerItem().withName(R.string.export_farmers).withIcon(FontAwesome.Icon.faw_file_export).withIdentifier(13).withSelectable(false),
-//                        new PrimaryDrawerItem().withName("Update Server").withIcon(FontAwesome.Icon.faw_upload).withIdentifier(13).withSelectable(false),
-                        new PrimaryDrawerItem().withName("Backup Data").withIcon(FontAwesome.Icon.faw_file_export).withIdentifier(14).withSelectable(false),
+                        new PrimaryDrawerItem().withName(R.string.settings).withIcon(FontAwesome.Icon.faw_cog).withIdentifier(7).withSelectable(false),
+                        new PrimaryDrawerItem().withName(R.string.readcsv).withIcon(FontAwesome.Icon.faw_database).withIdentifier(8).withSelectable(false),
+                        new PrimaryDrawerItem().withName(R.string.sync).withIcon(FontAwesome.Icon.faw_sync).withIdentifier(9).withSelectable(false).withBadgeStyle(new BadgeStyle().withTextColor(Color.WHITE).withColorRes(R.color.secondary_light)),
+                        new PrimaryDrawerItem().withName(R.string.logout).withIcon(FontAwesome.Icon.faw_sign_out_alt).withIdentifier(10).withSelectable(false),
+                        new PrimaryDrawerItem().withName(R.string.export_farmers).withIcon(FontAwesome.Icon.faw_file_export).withIdentifier(11).withSelectable(false),
+                        new PrimaryDrawerItem().withName("Backup Data").withIcon(FontAwesome.Icon.faw_file_export).withIdentifier(12).withSelectable(false),
                         new SectionDrawerItem().withName("Send us you feedbacks"),
                         new SecondaryDrawerItem().withName("E-mail").withIcon(FontAwesome.Icon.faw_envelope).withIdentifier(20).withSelectable(false),
                         new SecondaryDrawerItem().withName("Visit Our Website").withIcon(GoogleMaterial.Icon.gmd_web).withIdentifier(21).withTag("Bullhorn")
@@ -256,41 +253,32 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
                         if (drawerItem != null) {
                             Intent intent = null;
                             if (drawerItem.getIdentifier() == 1) {
-//                                navigation();
                                 intent = new Intent(MainNavigationDrawerAlt.this, FarmerActivity.class);
-
                             }
                             else if (drawerItem.getIdentifier() == 2) {
                                 intent = new Intent(MainNavigationDrawerAlt.this, AgentActivity.class);
 
                             } else if (drawerItem.getIdentifier() == 3) {
-
+                                AddInputDialog.newInstance("").show(getSupportFragmentManager(), AddInputDialog.TAG);
                             } else if (drawerItem.getIdentifier() == 4) {
+                                intent = new Intent(MainNavigationDrawerAlt.this, PackagesActivity.class);
 
                             } else if (drawerItem.getIdentifier() == 5) {
+                                intent = new Intent(MainNavigationDrawerAlt.this, ReceiveInputsActivity.class);
 
                             } else if (drawerItem.getIdentifier() == 6) {
                                 intent = new Intent(MainNavigationDrawerAlt.this, SendBulkSmsActivity.class);
 
-                            }
-                            else if (drawerItem.getIdentifier() == 8) {
-                                intent = new Intent(MainNavigationDrawerAlt.this, ReceiveInputsActivity.class);
-                            }
-                            else if (drawerItem.getIdentifier() == 9) {
-
+                            } else if (drawerItem.getIdentifier() == 7) {
                                 FragmentManager fm = getSupportFragmentManager();
                                 IPSettingsFragment ipSettingsFragment = new IPSettingsFragment();
                                 ipSettingsFragment.show(fm, "Dialog Fragment");
-
                             }
-                            else if (drawerItem.getIdentifier() == 10) {
+                            else if (drawerItem.getIdentifier() == 8) {
                                 listitems = getResources().getStringArray(R.array.populatepath);
                                 showOptionDialog(listitems, "Population Path", "path");
-
-
                             }
-                            else if (drawerItem.getIdentifier() == 11) {
-
+                            else if (drawerItem.getIdentifier() == 9) {
                                 if (checkInternetConnectivity()) {
                                     pDialog = new ProgressDialog(MainNavigationDrawerAlt.this);
                                     pDialog.setMessage("Working. Please wait...");
@@ -408,10 +396,8 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
                                     snackbar.show();
                                 }
 
-//                                new CheckFilesBeforeUploads().execute();
-
                             }
-                            else if (drawerItem.getIdentifier() == 12) {
+                            else if (drawerItem.getIdentifier() == 10) {
 
                                 new AlertDialog.Builder(MainNavigationDrawerAlt.this)
                                         .setMessage("Click [YES] to logout!!!")
@@ -427,14 +413,15 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
                                             }
                                         })
                                         .show();
+
                             }
-                            else if (drawerItem.getIdentifier() == 13) {
+                            else if (drawerItem.getIdentifier() == 11) {
                                 intent = new Intent(MainNavigationDrawerAlt.this, ExportFarmersAssignedAggActivity.class);
-                            } else if (drawerItem.getIdentifier() == 14) {
-
+                            }
+                            else if (drawerItem.getIdentifier() == 12) {
                                 new BackupDatabaseRecords().execute();
-
-                            } else if (drawerItem.getIdentifier() == 20) {
+                            }
+                            else if (drawerItem.getIdentifier() == 20) {
                                 intent = new Intent(Intent.ACTION_SEND);
                                 intent.setType("text/email");
                                 intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@uclghana.com"});
@@ -469,7 +456,7 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
             headerResult.setActiveProfile(profile);
         }
 
-        result.updateBadge(11, new StringHolder(unsyncedFiles() + " File(s)"));
+        result.updateBadge(9, new StringHolder(unsyncedFiles() + " File(s)"));
     }
 
     private void setupClickListeners() {
@@ -2740,56 +2727,6 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
         }
     }
 
-    class DeleteFarmers extends AsyncTask<String, String, String> {
-
-        /**
-         * Before starting background thread
-         * Show Progress Bar Dialog
-         */
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        /**
-         * Downloading file in background thread
-         */
-        @Override
-        protected String doInBackground(String... f_url) {
-            try {
-
-                String farmersSaved = AndroidUtils.getPreferenceData(MainNavigationDrawerAlt.this, Constants.SAVED_SERVER_FARMER, "");
-                if (farmersSaved.length() > 0) {
-                    if (farmersSaved.contains(",")) {
-                        String[] parts = farmersSaved.split(",");
-                        for (String x : parts) {
-                            if (!x.isEmpty())
-                                AndroidUtils.deleteAllFarmerAndAssociatedData(x);
-                        }
-                    } else {
-                        if (!farmersSaved.isEmpty())
-                            AndroidUtils.deleteAllFarmerAndAssociatedData(farmersSaved);
-                    }
-                }
-
-            } catch (Exception e) {
-                Log.e("Error: ", e.getMessage());
-            }
-
-            return "";
-        }
-
-
-        /**
-         * After completing background task
-         * Dismiss the progress dialog
-         **/
-        @Override
-        protected void onPostExecute(String file_url) {
-
-        }
-    }
-
     class CheckFilesBeforeUploads extends AsyncTask<String, String, String> {
 
         /**
@@ -2926,7 +2863,7 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
             if (pDialog != null) {
                 pDialog.setMessage("All Done");
 //                AndroidUtils.uploadFileToServer(getBaseContext());
-                result.updateBadge(11, new StringHolder(unsyncedFiles() + " File(s)"));
+                result.updateBadge(9, new StringHolder(unsyncedFiles() + " File(s)"));
                 pDialog.dismiss();
             }
         }
@@ -3251,7 +3188,7 @@ public class MainNavigationDrawerAlt extends AppCompatActivity implements Backup
     @Override
     protected void onResume() {
         super.onResume();
-        result.updateBadge(11, new StringHolder(unsyncedFiles() + " File(s)"));
+        result.updateBadge(9, new StringHolder(unsyncedFiles() + " File(s)"));
         farmersCount();
         farmsCount();
     }

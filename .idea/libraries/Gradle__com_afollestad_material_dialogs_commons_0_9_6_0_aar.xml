@@ -1,11 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.afollestad.material-dialogs:commons:0.9.6.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/c959601e8fa3c9d848c63dc4caa11e49/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/9c42c9d7a4e9b83d41d1d0968cccaa62/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/c959601e8fa3c9d848c63dc4caa11e49/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/c959601e8fa3c9d848c63dc4caa11e49/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/9c42c9d7a4e9b83d41d1d0968cccaa62/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/9c42c9d7a4e9b83d41d1d0968cccaa62/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-commons-0.9.6.0.aar/9c42c9d7a4e9b83d41d1d0968cccaa62/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,10 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.pchmn:MaterialChipsInput:1.0.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-MaterialChipsInput-1.0.8.aar/dbdaf498ed6ddc76122fef202b11c8bc/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-MaterialChipsInput-1.0.8.aar/dbdaf498ed6ddc76122fef202b11c8bc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-MaterialChipsInput-1.0.8.aar/11ed7ecc5714857411334f724a7be392/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-MaterialChipsInput-1.0.8.aar/11ed7ecc5714857411334f724a7be392/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-MaterialChipsInput-1.0.8.aar/11ed7ecc5714857411334f724a7be392/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.pchmn/MaterialChipsInput/1.0.8/ebd2c45f42161bb50be09c2ab3669cce6181859b/MaterialChipsInput-1.0.8-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

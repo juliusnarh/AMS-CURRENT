@@ -12,42 +12,42 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int chipBackground = 0x7f040083;
-        public static final int chipHeight = 0x7f040088;
-        public static final int chipSpacing = 0x7f04008f;
-        public static final int chipTextColor = 0x7f040097;
-        public static final int chipTextSize = 0x7f040098;
-        public static final int chipVerticalSpacing = 0x7f040099;
+        public static final int chipBackground = 0x7f040097;
+        public static final int chipHeight = 0x7f04009c;
+        public static final int chipSpacing = 0x7f0400a4;
+        public static final int chipTextColor = 0x7f0400ad;
+        public static final int chipTextSize = 0x7f0400ae;
+        public static final int chipVerticalSpacing = 0x7f0400af;
     }
     public static final class color {
         private color() {}
 
-        public static final int chip_default_icon_background_color = 0x7f060047;
-        public static final int chip_default_text_color = 0x7f060048;
-        public static final int chip_material_background = 0x7f060049;
+        public static final int chip_default_icon_background_color = 0x7f060048;
+        public static final int chip_default_text_color = 0x7f060049;
+        public static final int chip_material_background = 0x7f06004a;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int chip_default_left_margin = 0x7f07007f;
-        public static final int chip_default_padding_between_image = 0x7f070080;
-        public static final int chip_default_padding_edge = 0x7f070081;
-        public static final int chip_default_right_margin = 0x7f070082;
+        public static final int chip_default_left_margin = 0x7f070084;
+        public static final int chip_default_padding_between_image = 0x7f070085;
+        public static final int chip_default_padding_edge = 0x7f070086;
+        public static final int chip_default_right_margin = 0x7f070087;
     }
     public static final class string {
         private string() {}
 
-        public static final int chip_ellipsis = 0x7f11006b;
+        public static final int chip_ellipsis = 0x7f120061;
     }
     public static final class style {
         private style() {}
 
-        public static final int DefaultChipSuggestionTextView = 0x7f1200db;
+        public static final int DefaultChipSuggestionTextView = 0x7f1300f1;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] NachoTextView = { 0x7f040083, 0x7f040088, 0x7f04008f, 0x7f040097, 0x7f040098, 0x7f040099 };
+        public static final int[] NachoTextView = { 0x7f040097, 0x7f04009c, 0x7f0400a4, 0x7f0400ad, 0x7f0400ae, 0x7f0400af };
         public static final int NachoTextView_chipBackground = 0;
         public static final int NachoTextView_chipHeight = 1;
         public static final int NachoTextView_chipSpacing = 2;

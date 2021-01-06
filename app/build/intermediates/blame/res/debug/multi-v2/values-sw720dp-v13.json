@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-core-0.9.6.0.aar\\63f317798c6dd08d91da395e21aa7ff1\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-core-0.9.6.0.aar\\778955dcd68bca81ad36e57f8545265c\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-1.0.0.aar\\41aae2ad69bd5c91dca7c81ffc57c216\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-1.1.0.aar\\7c39e7a240e8f321b98378c3f0492113\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

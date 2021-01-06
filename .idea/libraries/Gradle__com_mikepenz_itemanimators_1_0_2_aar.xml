@@ -1,10 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikepenz:itemanimators:1.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-itemanimators-1.0.2.aar/b61ab0bef22303c63a591c3321f3f52b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-itemanimators-1.0.2.aar/b61ab0bef22303c63a591c3321f3f52b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-itemanimators-1.0.2.aar/323eda3ec3b8c648fe339b177105e20f/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-itemanimators-1.0.2.aar/323eda3ec3b8c648fe339b177105e20f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-itemanimators-1.0.2.aar/323eda3ec3b8c648fe339b177105e20f/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/itemanimators/1.0.2/2234e9c3c1d8e0375dc9b0fd602f46971f6f7a67/itemanimators-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/itemanimators/1.0.2/3555346552b0f8a7e5263c327b162d678ea93607/itemanimators-1.0.2-sources.jar!/" />
     </SOURCES>

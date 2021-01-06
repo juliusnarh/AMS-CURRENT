@@ -19,7 +19,7 @@ import com.telpo.usb.finger.utils.AndroidUtils;
 import java.util.List;
 
 public class SalesAdapter extends RecyclerView.Adapter<SalesAdapter.MyViewHolder> {
-    Resources res;
+    private Resources res;
     private List<Sales> salesList;
 
     public SalesAdapter(List<Sales> salesList) {
@@ -44,14 +44,14 @@ public class SalesAdapter extends RecyclerView.Adapter<SalesAdapter.MyViewHolder
             e.printStackTrace();
         }
         if (sales.getFarmerid() != null) {
-            String pos = String.valueOf(position + 1) + ".";
+            String pos = (position + 1) + ".";
             holder.pos.setText(pos);
             holder.inputname.setText(sales.getPname());
-            holder.quantity.setText(res.getString(R.string.xquantity, String.valueOf(sales.getQuantity())));
-            holder.cost.setText(res.getString(R.string.price_item2, sales.getTotalcost()));
+            holder.quantity.setText(res.getString(R.string.xquantity, sales.getQuantity()));
+            holder.cost.setText(res.getString(R.string.price_item, sales.getTotalcost()));
 
 
-            if (products.size() > 0) {
+            if ((products != null ? products.size() : 0) > 0) {
                 if (sales.getTransactionid().startsWith(AndroidUtils.SERVICETRANSID))
                     holder.unit.setVisibility(View.GONE);
                 else

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 21 12:03:24 GMT 2020
+#Sun Oct 11 19:31:10 GMT 2020
 5.base=C\:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=C\:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 22.path=lib/armeabi/libfp_fph.so

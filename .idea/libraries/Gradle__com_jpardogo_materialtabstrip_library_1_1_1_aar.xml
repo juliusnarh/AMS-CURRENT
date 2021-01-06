@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.jpardogo.materialtabstrip:library:1.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.1.1.aar/71c7aae38ad06109d0c6eadb94794d6f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.1.1.aar/71c7aae38ad06109d0c6eadb94794d6f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.1.1.aar/90d917e06a734eba8eeb31cd5c7bb37b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.1.1.aar/90d917e06a734eba8eeb31cd5c7bb37b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.1.1.aar/90d917e06a734eba8eeb31cd5c7bb37b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

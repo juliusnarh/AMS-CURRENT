@@ -144,8 +144,6 @@ public class ReceiveInputsActivity extends AppCompatActivity {
         fromDealerList = new ArrayList<>();
         parts = new StringBuilder();
 
-//        ProductsFromDealer.deleteAll(ProductsFromDealer.class);
-//        AvailablePackages.deleteAll(AvailablePackages.class);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         if (mBluetoothAdapter == null) {
@@ -154,7 +152,6 @@ public class ReceiveInputsActivity extends AppCompatActivity {
 
         setuprecycler();
         smsBroadcastReceiver = new SmsBroadcastReceiver();
-
         smsBroadcastReceiver.setListener(new SmsBroadcastReceiver.Listener() {
             @Override
             public void onTextReceived(String text, String senderaddress) {
@@ -212,16 +209,14 @@ public class ReceiveInputsActivity extends AppCompatActivity {
                     .build();
             progDialog.show();
 
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    progDialog.dismiss();
-                    sendMessage("ACCEPTED");
-                    savetoinventory();
-                    Toasty.success(getApplicationContext(), "Transaction successful").show();
-                }
+            mHandler.postDelayed(() -> {
+                progDialog.dismiss();
+                sendMessage("ACCEPTED");
+                savetoinventory();
+                Toasty.success(getApplicationContext(), "Transaction successful").show();
             }, 1000);
         });
+
         binding.content.declinebtn.setOnClickListener(v -> {
             final MaterialDialog progDialog = new MaterialDialog.Builder(this)
                     .content("Declining inputs. Please wait...")
@@ -230,12 +225,9 @@ public class ReceiveInputsActivity extends AppCompatActivity {
                     .build();
             progDialog.show();
 
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    progDialog.dismiss();
-                    sendMessage("DECLINED");
-                }
+            mHandler.postDelayed(() -> {
+                progDialog.dismiss();
+                sendMessage("DECLINED");
             }, 1000);
         });
     }

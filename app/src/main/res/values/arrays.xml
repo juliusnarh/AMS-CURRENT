@@ -45,6 +45,18 @@
         <item>Tenant</item>
     </string-array>
 
+    <string-array name="category">
+        <item>Seed</item>
+        <item>Fertilizer</item>
+        <item>Weedicide</item>
+        <item>Insecticide</item>
+        <item>Pesticide</item>
+        <item>Fugar</item>
+        <item>Herbicide</item>
+        <item>Mechanical Tool</item>
+        <item>Services</item>
+    </string-array>
+
     <string-array name="cocoaspecialtylist">
         <item>Conventional</item>
         <item>Traceable</item>
@@ -350,7 +362,6 @@
         <item>ER10</item>
         <item>NR17</item>
     </string-array>
-
 
     <string-array name="district">
         <item>Abura Asebu Kwaman</item>

@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: net.gotev:hostmonitor:2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hostmonitor-2.0.aar/156bd3301c3a449a3b7643395847506c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hostmonitor-2.0.aar/156bd3301c3a449a3b7643395847506c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hostmonitor-2.0.aar/b0708e8475f944e1b0a7b22d284d475d/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hostmonitor-2.0.aar/b0708e8475f944e1b0a7b22d284d475d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hostmonitor-2.0.aar/b0708e8475f944e1b0a7b22d284d475d/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.gotev/hostmonitor/2.0/3ac22b1ea74425049a6844693289e00ace37a134/hostmonitor-2.0-javadoc.jar!/" />

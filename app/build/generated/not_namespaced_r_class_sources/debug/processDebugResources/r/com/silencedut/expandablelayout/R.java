@@ -12,49 +12,50 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int expDuration = 0x7f04013e;
-        public static final int expExpandScrollTogether = 0x7f04013f;
-        public static final int expWithParentScroll = 0x7f040140;
-        public static final int layoutManager = 0x7f0401ed;
-        public static final int reverseLayout = 0x7f040324;
-        public static final int spanCount = 0x7f040358;
-        public static final int stackFromEnd = 0x7f04035e;
+        public static final int expDuration = 0x7f040183;
+        public static final int expExpandScrollTogether = 0x7f040184;
+        public static final int expWithParentScroll = 0x7f040185;
+        public static final int layoutManager = 0x7f040245;
+        public static final int reverseLayout = 0x7f04039c;
+        public static final int spanCount = 0x7f0403d6;
+        public static final int stackFromEnd = 0x7f0403dc;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0700d2;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0700d3;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f0700d4;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0700da;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0700db;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f0700dc;
     }
     public static final class id {
         private id() {}
 
-        public static final int item_touch_helper_previous_elevation = 0x7f0a0240;
+        public static final int item_touch_helper_previous_elevation = 0x7f0a027f;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f11004a;
+        public static final int app_name = 0x7f12003f;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] ExpandableLayout = { 0x7f04013e, 0x7f04013f, 0x7f040140 };
+        public static final int[] ExpandableLayout = { 0x7f040183, 0x7f040184, 0x7f040185 };
         public static final int ExpandableLayout_expDuration = 0;
         public static final int ExpandableLayout_expExpandScrollTogether = 1;
         public static final int ExpandableLayout_expWithParentScroll = 2;
-        public static final int[] RecyclerView = { 0x10100c4, 0x10100f1, 0x7f040168, 0x7f040169, 0x7f04016a, 0x7f04016b, 0x7f04016c, 0x7f0401ed, 0x7f040324, 0x7f040358, 0x7f04035e };
+        public static final int[] RecyclerView = { 0x10100c4, 0x10100eb, 0x10100f1, 0x7f0401b1, 0x7f0401b2, 0x7f0401b3, 0x7f0401b4, 0x7f0401b5, 0x7f040245, 0x7f04039c, 0x7f0403d6, 0x7f0403dc };
         public static final int RecyclerView_android_orientation = 0;
-        public static final int RecyclerView_android_descendantFocusability = 1;
-        public static final int RecyclerView_fastScrollEnabled = 2;
-        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 3;
-        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 4;
-        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 5;
-        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 6;
-        public static final int RecyclerView_layoutManager = 7;
-        public static final int RecyclerView_reverseLayout = 8;
-        public static final int RecyclerView_spanCount = 9;
-        public static final int RecyclerView_stackFromEnd = 10;
+        public static final int RecyclerView_android_clipToPadding = 1;
+        public static final int RecyclerView_android_descendantFocusability = 2;
+        public static final int RecyclerView_fastScrollEnabled = 3;
+        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 4;
+        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 5;
+        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 6;
+        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 7;
+        public static final int RecyclerView_layoutManager = 8;
+        public static final int RecyclerView_reverseLayout = 9;
+        public static final int RecyclerView_spanCount = 10;
+        public static final int RecyclerView_stackFromEnd = 11;
     }
 }

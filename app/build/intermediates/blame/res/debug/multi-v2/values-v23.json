@@ -4,26 +4,55 @@
             "outputFile": "C:\\Users\\UCL\\Documents\\UCL\\PROJECTS\\AMS-CURRENT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\0a4ccfe79b1323e53091437aafc383d2\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialize-1.1.2.aar\\ad4bcd78b94b8868b95dec1e417c3571\\res\\values-v23\\values-v23.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
-                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
-                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
-                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,20,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "107,242,377,452,539,1329,2131,2258,2363,2478,2585",
-                        "endLines": "3,4,5,6,19,32,33,34,35,36,37",
-                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
-                        "endOffsets": "237,372,447,534,1324,2126,2253,2358,2473,2580,2693"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
                     }
                 },
                 {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-1.0.0.aar\\663dcbd51869d0a292416a76f1b13284\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\df524169235bf81c58a2f0b50feef641\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2618,2842,2957,3064,3177",
+                        "endLines": "2,3,4,5,19,33,34,35,36,40,41,42,43,47",
+                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2613,2837,2952,3059,3172,3402"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,21,35,36,37,38,42,43,44,45",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "107,242,377,452,539,1423,2319,2438,2565,2670,2894,3009,3116,3229",
+                        "endLines": "3,4,5,6,20,34,35,36,37,41,42,43,44,48",
+                        "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
+                        "endOffsets": "237,372,447,534,1418,2314,2433,2560,2665,2889,3004,3111,3224,3454"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.1.0.aar\\c57bc72580603fdb046c5d0ebab6c188\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "52,56",
+                        "startColumns": "4,4",
+                        "startOffsets": "3609,3874",
+                        "endLines": "55,59",
+                        "endColumns": "10,10",
+                        "endOffsets": "3869,4142"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-1.0.0.aar\\ac552e690bec0fbdad419a6c31b12dda\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -33,22 +62,12 @@
                         "endOffsets": "200"
                     },
                     "to": {
-                        "startLines": "38",
+                        "startLines": "49",
                         "startColumns": "4",
-                        "startOffsets": "2698",
-                        "endLines": "40",
+                        "startOffsets": "3459",
+                        "endLines": "51",
                         "endColumns": "12",
-                        "endOffsets": "2843"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\UCL\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-materialize-1.1.2.aar\\aea72df6f3592aa8d1a2f7fc34defa37\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "51",
-                        "endOffsets": "102"
+                        "endOffsets": "3604"
                     }
                 }
             ]

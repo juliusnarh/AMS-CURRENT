@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.alespero:expandable-cardview:0.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expandable-cardview-0.8.aar/7cc8eec42278274a96e7cb48444624d3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expandable-cardview-0.8.aar/7cc8eec42278274a96e7cb48444624d3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expandable-cardview-0.8.aar/e4379d29dd40d93093012f0acff1c16b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expandable-cardview-0.8.aar/e4379d29dd40d93093012f0acff1c16b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-expandable-cardview-0.8.aar/e4379d29dd40d93093012f0acff1c16b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

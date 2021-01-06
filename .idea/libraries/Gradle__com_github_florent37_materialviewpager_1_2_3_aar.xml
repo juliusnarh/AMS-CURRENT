@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.florent37:materialviewpager:1.2.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-materialviewpager-1.2.3.aar/6c43d439e1fd043a89fbf2ffb4936d0d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-materialviewpager-1.2.3.aar/6c43d439e1fd043a89fbf2ffb4936d0d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-materialviewpager-1.2.3.aar/28e320f6e6b59bc2a12aa077d3fd8cae/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-materialviewpager-1.2.3.aar/28e320f6e6b59bc2a12aa077d3fd8cae/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-materialviewpager-1.2.3.aar/28e320f6e6b59bc2a12aa077d3fd8cae/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

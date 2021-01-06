@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-appindexing:9.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-appindexing-9.0.2.aar/3d958c957f8b8ce13122db2a1f1cec1f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-appindexing-9.0.2.aar/3d958c957f8b8ce13122db2a1f1cec1f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-appindexing-9.0.2.aar/5f2658194937ffbcfe83c269ce2fe72b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-appindexing-9.0.2.aar/5f2658194937ffbcfe83c269ce2fe72b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-appindexing-9.0.2.aar/5f2658194937ffbcfe83c269ce2fe72b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

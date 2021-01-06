@@ -42,12 +42,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:allowBackup"
+        tools:replace="android:allowBackup,android:theme"
         tools:targetApi="m">
-        <activity android:name=".activities.SplashActivity"
+        <activity
+            android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
 
         </activity>
+        <activity android:name=".activities.PackagesActivity" />
         <activity
             android:name=".activities.ExportFarmersAssignedAggActivity"
             android:label="@string/title_activity_export_farmers_assigned_agg"
@@ -171,8 +173,7 @@
 
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity android:name=".activities.FarmerTransaction" />
         <activity android:name=".activities.AggregatorTest" />
         <activity android:name=".activities.FarmSearchView" />

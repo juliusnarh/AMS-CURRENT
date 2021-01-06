@@ -9,15 +9,17 @@ public class AvailablePackages extends SugarRecord {
     public String recoverybagsperacre;
     public String contract;
     public Date datecreated;
+    public String packageid;
 
     public AvailablePackages() {
     }
 
-    public AvailablePackages(String packagename, Date datecreated, String recoverybagsperacre, String contract) {
+    public AvailablePackages(String packagename, String recoverybagsperacre, String contract, Date datecreated, String packageid) {
         this.packagename = packagename;
+        this.recoverybagsperacre = recoverybagsperacre;
         this.contract = contract;
         this.datecreated = datecreated;
-        this.recoverybagsperacre = recoverybagsperacre;
+        this.packageid = packageid;
     }
 
     public String getPackagename() {
@@ -26,14 +28,6 @@ public class AvailablePackages extends SugarRecord {
 
     public void setPackagename(String packagename) {
         this.packagename = packagename;
-    }
-
-    public Date getDatecreated() {
-        return datecreated;
-    }
-
-    public void setDatecreated(Date datecreated) {
-        this.datecreated = datecreated;
     }
 
     public String getRecoverybagsperacre() {
@@ -50,5 +44,21 @@ public class AvailablePackages extends SugarRecord {
 
     public void setContract(String contract) {
         this.contract = contract;
+    }
+
+    public Date getDatecreated() {
+        return datecreated;
+    }
+
+    public void setDatecreated(Date datecreated) {
+        this.datecreated = datecreated;
+    }
+
+    public String getPackageid() {
+        return packageid;
+    }
+
+    public void setPackageid(String packageid) {
+        this.packageid = packageid;
     }
 }

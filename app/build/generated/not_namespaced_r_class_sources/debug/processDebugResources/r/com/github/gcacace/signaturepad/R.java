@@ -12,24 +12,24 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int clearOnDoubleClick = 0x7f0400af;
-        public static final int penColor = 0x7f0402fe;
-        public static final int penMaxWidth = 0x7f0402ff;
-        public static final int penMinWidth = 0x7f040300;
-        public static final int velocityFilterWeight = 0x7f0403f4;
+        public static final int clearOnDoubleClick = 0x7f0400c5;
+        public static final int penColor = 0x7f040373;
+        public static final int penMaxWidth = 0x7f040374;
+        public static final int penMinWidth = 0x7f040375;
+        public static final int velocityFilterWeight = 0x7f04047d;
     }
     public static final class id {
         private id() {}
 
-        public static final int dataBinding = 0x7f0a012c;
-        public static final int onAttachStateChangeListener = 0x7f0a0371;
-        public static final int onDateChanged = 0x7f0a0372;
-        public static final int textWatcher = 0x7f0a04c4;
+        public static final int dataBinding = 0x7f0a015d;
+        public static final int onAttachStateChangeListener = 0x7f0a03d7;
+        public static final int onDateChanged = 0x7f0a03d8;
+        public static final int textWatcher = 0x7f0a053f;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] SignaturePad = { 0x7f0400af, 0x7f0402fe, 0x7f0402ff, 0x7f040300, 0x7f0403f4 };
+        public static final int[] SignaturePad = { 0x7f0400c5, 0x7f040373, 0x7f040374, 0x7f040375, 0x7f04047d };
         public static final int SignaturePad_clearOnDoubleClick = 0;
         public static final int SignaturePad_penColor = 1;
         public static final int SignaturePad_penMaxWidth = 2;

@@ -11,8 +11,7 @@
     android:focusable="true"
     android:orientation="horizontal"
     android:padding="5dp"
-    android:weightSum="3"
-    tools:showIn="@layout/fragment_report">
+    android:weightSum="3">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/farmerimg"
