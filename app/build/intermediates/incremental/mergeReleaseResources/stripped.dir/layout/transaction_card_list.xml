@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/trans_farmer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="UCL-154-002"
+                    android:textSize="@dimen/text_size_bsmall" />
+
+                <TextView
+                    android:id="@+id/trans_farmer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trans_farmer_id"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="farmer name"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/trans_items_purchased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/trans_farmer_name"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:text="Items Purchased"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/trans_items_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trans_items_purchased"
+                    android:ellipsize="end"
+                    android:text="Items Total"
+                    android:textColor="@color/secondary_light"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/trans_payment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:text="Payment Method"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/trans_payment_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trans_payment_method"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:text="Post-Paid/Credit"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/trans_payment_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trans_payment_style"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:text="Debtor/Not"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/trans_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/text_size_tiny" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+
+

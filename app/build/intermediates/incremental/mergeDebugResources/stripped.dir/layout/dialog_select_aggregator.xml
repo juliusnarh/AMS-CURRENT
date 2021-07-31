@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                       
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" android:tag="layout/dialog_select_aggregator_0" xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_autoscale_button"
+            android:padding="6dp"
+            android:theme="@style/Forframe">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/numberselected"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.9"
+                        android:fontFamily="@font/dosis_bold"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="italic"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@drawable/round_cancel_24"
+                        android:tint="@color/accent" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/norecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_round_manual_scale"
+                    android:fontFamily="@font/dosis_regular"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="No Record Available"
+                    android:textSize="@dimen/text_size_medium_up"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_farmer" />
+            </LinearLayout>
+
+            <!-- YOUR CUSTOM VIEWS HERE -->
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/round_save_alt_white_24"
+                app:backgroundTint="@color/accent"
+                app:elevation="0dp"
+                app:fabCustomSize="40dp"
+                app:fabSize="normal"
+                app:maxImageSize="18.5dp"
+                app:rippleColor="@color/black_overlay" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+         

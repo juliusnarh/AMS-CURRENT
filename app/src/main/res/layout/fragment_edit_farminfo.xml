@@ -450,7 +450,7 @@
                                 android:id="@+id/privorg"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:enabled='@{farmreg.extensionorg.get().equals("Private") ? true : false}'
+                                android:enabled='@{farmreg.extensionorg.equals("Private") ? true : false}'
                                 android:hint="Private Organization providing Extension Services"
                                 android:inputType="textCapWords"
                                 android:text="@={farmreg.privateextentionorg}"

@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/e27e5453b3632eb31dff5ca0ba1b05ec/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/e27e5453b3632eb31dff5ca0ba1b05ec/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/e27e5453b3632eb31dff5ca0ba1b05ec/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/056d50a4f72b27c078c2590bfd06810b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/056d50a4f72b27c078c2590bfd06810b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-volley-1.1.1.aar/056d50a4f72b27c078c2590bfd06810b/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.volley/volley/1.1.1/4dab8aeeac8192fb8b6d7f9186b7357d94808049/volley-1.1.1-javadoc.jar!/" />

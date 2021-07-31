@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                       
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" android:tag="layout/dialog_addpackage_0" xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_form"
+            android:padding="8dp"
+            android:theme="@style/Forframe">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/dosis_extrabold"
+                            android:padding="5dp"
+                            android:text="ADD NEW Package"
+                            android:textAllCaps="true"
+                            android:textColor="@color/grey_600"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <ImageView
+                            android:id="@+id/close"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/round_cancel_24"
+                            android:tint="@color/accent" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/accent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="Package Name"
+                        android:textSize="@dimen/text_size_tiny"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/packname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/background_edittext"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="text|textCapSentences"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textSize="15sp"
+                        android:tag="binding_1"     />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="Number of Recovery Bags Per Acreage"
+                        android:textSize="@dimen/text_size_tiny"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/recoverybags"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/background_edittext"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="text|textCapSentences"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textSize="15sp"
+                        android:tag="binding_2"     />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="Select Input"
+                        android:textSize="@dimen/text_size_tiny"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey_100"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/noitem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="No Input Available"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_bsmall"
+                            android:textStyle="bold|italic"
+                            android:visibility="gone" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical"
+                            app:spanCount="2"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            tools:listitem="@layout/item_inputs" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/selected_inputs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="@dimen/text_size_ssmall"
+                        android:text="Package Details"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/noitemdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="No Input Selected"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size_bsmall"
+                        android:textStyle="bold|italic"
+                        android:visibility="gone" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/selectedrecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <!-- YOUR CUSTOM VIEWS HERE -->
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/round_save_alt_white_24"
+                app:backgroundTint="@color/accent"
+                app:elevation="0dp"
+                app:fabCustomSize="40dp"
+                app:fabSize="normal"
+                app:maxImageSize="18.5dp"
+                app:rippleColor="@color/black_overlay" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+         

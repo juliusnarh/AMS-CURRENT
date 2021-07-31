@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/75a704fa358b2305c3cba9f573adf0da/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/75a704fa358b2305c3cba9f573adf0da/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/75a704fa358b2305c3cba9f573adf0da/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/cff2bb2bcae0580cff270bb1940f666d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/cff2bb2bcae0580cff270bb1940f666d/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-crossfader-1.5.1.aar/cff2bb2bcae0580cff270bb1940f666d/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/crossfader/1.5.1/5f7a2c359cc7b4dea987be8d7dca48c70ce5b3d1/crossfader-1.5.1-javadoc.jar!/" />

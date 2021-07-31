@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/52fe374b28c70b61895d4e71a1ece97c/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/52fe374b28c70b61895d4e71a1ece97c/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/52fe374b28c70b61895d4e71a1ece97c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/0c35473637768737625e6eb1a4471c46/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/0c35473637768737625e6eb1a4471c46/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-crash-9.0.2.aar/0c35473637768737625e6eb1a4471c46/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

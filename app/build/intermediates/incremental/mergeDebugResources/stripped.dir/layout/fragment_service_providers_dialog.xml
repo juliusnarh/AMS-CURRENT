@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_autoscale_button"
+    android:orientation="vertical"
+    tools:context=".inputdistributions_fragment.ReviewOrderDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:text="Service Providers"
+            android:textSize="@dimen/text_size_medium_up_up"
+            android:textStyle="italic|bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:src="@drawable/round_close_24"
+            android:tint="@color/grey_600" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/norecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="No record available"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_bsmall"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/fragment_service_list_dialog_item" />
+
+</LinearLayout>

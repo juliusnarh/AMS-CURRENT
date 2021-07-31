@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_animator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/badge_color">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/twotone_delete_white_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="@string/delete"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_bsmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inner_order_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/order_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="Image of inventory"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/black_trans80" />
+
+        <TextView
+            android:id="@+id/order_item_et_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/order_img"
+            android:fontFamily="@font/dosis_medium"
+            android:textSize="@dimen/text_size_medium_up_up" />
+
+        <TextView
+            android:id="@+id/order_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_item_et_quantity"
+            android:layout_toEndOf="@+id/order_img"
+            android:fontFamily="@font/dosis_light"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/order_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_img"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/order_img"
+            android:fontFamily="@font/app_font"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold|italic" />
+
+
+        <!--BUTTONS-->
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_img"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/order_change_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@mipmap/edit2"
+                android:paddingStart="540dp"
+                android:paddingEnd="550dp"
+                android:text="@string/order_modify_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/secondary_light"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+        <!--BUTTONS END-->
+    </RelativeLayout>
+</FrameLayout>

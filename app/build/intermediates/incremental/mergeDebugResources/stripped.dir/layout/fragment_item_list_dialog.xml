@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_reviewbottomsheet"
+    android:orientation="vertical"
+    tools:context=".inputdistributions_fragment.ReviewOrderDialogFragment">
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_strip"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:text="Review"
+            android:textSize="@dimen/text_size_medium_up_up"
+            android:textStyle="italic|bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:src="@drawable/round_close_24"
+            android:tint="@color/grey_600" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/declaration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_autoscale_button"
+        android:fontFamily="@font/dosis_medium"
+        android:padding="10dp"
+        android:text="@string/sms_declaration"
+        android:textSize="@dimen/text_size_bsmall"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/list_item_spacing_half"
+        tools:listitem="@layout/fragment_item_list_dialog_item" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/teal_800"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/dosis_medium"
+            android:text="TOTAL"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_bsmall"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/dosis_medium"
+            android:gravity="start"
+            android:padding="15dp"
+            android:text="@string/price_item"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/proceed_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:drawableRight="@drawable/forward"
+            android:fontFamily="@font/dosis_bold"
+            android:outlineProvider="paddedBounds"
+            android:text="proceed"
+            android:textColor="@color/teal_800"
+            android:textSize="@dimen/text_size_ssmall" />
+    </LinearLayout>
+</LinearLayout>

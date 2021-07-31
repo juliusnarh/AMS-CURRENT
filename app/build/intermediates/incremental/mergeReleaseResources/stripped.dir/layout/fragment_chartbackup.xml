@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                       
+                                                  
+                                       
+                                                     
+
+    
+
+                                           
+
+                                                        
+
+                 
+                        
+                                                                                
+           
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100" android:tag="layout/fragment_chartbackup_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:animateLayoutChanges="true" tools:context=".agent.fragment.AllAgentFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="4dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/viewBg"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/viewBg"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:text="Farmer Demograghics"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_medium_up_up" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.4"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="4dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Registered farmers:"
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="2dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_1"            
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="2dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Males: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="2dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_2"      
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.6"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="2dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Females: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="2dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_3"        
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+                                </LinearLayout>
+
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/demo_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="420dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/grey_200" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="A graph showing the age distribution of the farmers."
+                                    android:textColor="@color/md_orange_800"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/demo_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="480dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="10dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="4dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/viewBg"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/viewBg"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:text="Inventory"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_medium_up_up" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="A graph showing products against their quantities."
+                                    android:textColor="@color/md_orange_800"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/inventory_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="450dp"
+                                    android:layout_marginBottom="5dp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/viewBg"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/viewBg"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:text="Input Sale transactions"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_medium_up_up" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.2"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Subsidized: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_4"            
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.7"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Non-Subsidized: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.6"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_5"               
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="6">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Cash: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.9"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_6"      
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.4"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="MobileMoney: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.8"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_7"    
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Barter: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.9"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_8"    
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+                                </LinearLayout>
+
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/salestran_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="420dp"
+                                    android:visibility="gone" />
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/grey_200" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:paddingStart="2dp"
+                                    android:text="Total revenue accrued over various months"
+                                    android:textColor="@color/md_orange_800"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/salestran_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="490dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/viewBg"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/viewBg"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:text="Debtors"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_medium_up_up" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:paddingStart="5dp"
+                                    android:text="Debtors summary"
+                                    android:textColor="@color/md_orange_800"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/declaration_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="420dp"
+                                    android:layout_marginBottom="5dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/viewBg"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/viewBg"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:text="Purchase Transactions"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_medium_up_up" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Farmers Served: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_9"             
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Purchases: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_10"              
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Recoveries: "
+                                        android:textColor="@color/md_orange_800"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/dosis_regular"
+                                        android:paddingStart="5dp"
+                                        android:paddingTop="5dp"
+                                        android:tag="binding_11"      
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:textStyle="italic" />
+                                </LinearLayout>
+
+
+                                <com.github.mikephil.charting.charts.PieChart
+                                    android:id="@+id/scaletran_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="420dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="@color/grey_200" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dosis_regular"
+                                    android:paddingStart="5dp"
+                                    android:paddingTop="5dp"
+                                    android:text="Recoveries made"
+                                    android:textColor="@color/md_orange_800"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <com.github.mikephil.charting.charts.LineChart
+                                    android:id="@+id/scaletran_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="480dp"
+                                    android:layout_marginTop="5dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </FrameLayout>
+         

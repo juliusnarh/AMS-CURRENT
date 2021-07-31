@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/de944b533e57182cfe6f407caf6871f8/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/de944b533e57182cfe6f407caf6871f8/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/de944b533e57182cfe6f407caf6871f8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/8db180273c243fdc721da66371563752/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/8db180273c243fdc721da66371563752/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-signature-pad-1.2.1.aar/8db180273c243fdc721da66371563752/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gcacace/signature-pad/1.2.1/f247b3c6c7d6f5771c2c1b7c4d99ba204d4bbd1c/signature-pad-1.2.1-javadoc.jar!/" />

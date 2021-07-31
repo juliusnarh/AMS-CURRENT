@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" android:tag="layout/fragment_assign_farmer_aggregator_dialog_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_autoscale_button"
+            android:theme="@style/Forframe">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_autoscale_button"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/close_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:padding="1dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#000000"
+                        app:mrl_rippleDimension="10dp"
+                        app:mrl_rippleDuration="300"
+                        app:mrl_rippleOverlay="true"
+                        app:mrl_rippleRoundedCorners="50dp">
+                        <ImageView
+                            android:id="@+id/close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/content_desc_close_dialog"
+                            android:padding="5dp"
+                            android:src="@drawable/round_close_24" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progressBar"
+                        android:layout_marginTop="46dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_below="@+id/close_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/load_more_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recycler_view"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:padding="1dp"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="#000000"
+                        app:mrl_rippleDimension="10dp"
+                        app:mrl_rippleDuration="300"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true"
+                        app:mrl_rippleRoundedCorners="0dp">
+
+                        <TextView
+                            android:id="@+id/load_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey_50"
+                            android:padding="10dp"
+                            android:text="@string/load_more"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_800"
+                            android:textSize="@dimen/text_size_bsmall"
+                            android:textStyle="bold" />
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+            <!-- YOUR CUSTOM VIEWS HERE -->
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+         

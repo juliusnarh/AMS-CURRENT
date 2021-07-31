@@ -2,11 +2,15 @@
   <library name="Gradle: com.github.traex.rippleeffect:library:1.3@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/0816b62346bbea2c585ea4d1ea0ff9bc/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/9522c1d4b3cdfa78dfeaca952d7dec39/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/0816b62346bbea2c585ea4d1ea0ff9bc/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/0816b62346bbea2c585ea4d1ea0ff9bc/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/0816b62346bbea2c585ea4d1ea0ff9bc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/9522c1d4b3cdfa78dfeaca952d7dec39/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/9522c1d4b3cdfa78dfeaca952d7dec39/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.3.aar/9522c1d4b3cdfa78dfeaca952d7dec39/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.traex.rippleeffect/library/1.3/b5523f1db330c592e2cf056da5081d8e7d94bc6a/library-1.3-javadoc.jar!/" />

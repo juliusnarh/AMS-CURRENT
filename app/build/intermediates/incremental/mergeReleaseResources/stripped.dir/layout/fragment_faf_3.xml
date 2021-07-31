@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    
+
+                                           
+
+                                                        
+
+                 
+                       
+                                                                                 
+           
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical"
+        tools:context=".inputdistributions_fragment.FAF_3Fragment" android:tag="layout/fragment_faf_3_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="@string/farm_assessment_form"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtpinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/comments"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtpinfo"
+                android:background="@color/text_color" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Comments"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:tag="binding_1"            />
+
+    </LinearLayout>
+         

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" android:tag="layout/fragment_search_timeline_dialog_0">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_autoscale_button"
+            android:theme="@style/Forframe">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_autoscale_button"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Filter when reports begin and end"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_ssmall"
+                            android:textStyle="bold|italic" />
+
+                        <ImageView
+                            android:id="@+id/close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/_ll"
+                            android:layout_alignEnd="@id/header"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/round_close_24" />
+
+                        <LinearLayout
+                            android:id="@+id/_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/header"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="From:"
+                                android:textSize="@dimen/text_size_tiny"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/timelinestart"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_edittext"
+                                android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+                                android:drawablePadding="5dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:fontFamily="sans-serif-light"
+                                android:hint="04-04-2018"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textSize="15sp"
+                                android:tag="binding_1"     />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:text="To:"
+                                android:textSize="@dimen/text_size_tiny"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/timelineend"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_edittext"
+                                android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+                                android:drawablePadding="5dp"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:fontFamily="sans-serif-light"
+                                android:hint="25-04-2019"
+                                android:inputType="number"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:textSize="15sp"
+                                android:tag="binding_2"     />
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/search_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/_ll"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/dosis_bold"
+                            android:text="Collect Data"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_size_extra_small" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+            <!-- YOUR CUSTOM VIEWS HERE -->
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+         

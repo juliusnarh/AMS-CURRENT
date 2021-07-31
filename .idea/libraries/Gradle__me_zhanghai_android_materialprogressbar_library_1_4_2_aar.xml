@@ -2,11 +2,15 @@
   <library name="Gradle: me.zhanghai.android.materialprogressbar:library:1.4.2@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/220a5bf2ca3e55d32a96144090bfdda4/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/72be24aa256a69b6f1a96c3d84e2ae11/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/220a5bf2ca3e55d32a96144090bfdda4/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/220a5bf2ca3e55d32a96144090bfdda4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/220a5bf2ca3e55d32a96144090bfdda4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/72be24aa256a69b6f1a96c3d84e2ae11/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/72be24aa256a69b6f1a96c3d84e2ae11/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-library-1.4.2.aar/72be24aa256a69b6f1a96c3d84e2ae11/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

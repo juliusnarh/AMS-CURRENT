@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.telpo.usb.finger.activities.registration.HouseholdRelationshipActivity" android:tag="layout/activity_household_relationship_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/empty_photo"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txtfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic"
+            android:layout_alignStart="@+id/pic"
+            android:layout_alignEnd="@+id/pic"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/empty_photo"
+            android:text="TextView"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txtmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtfullname"
+            android:layout_alignStart="@+id/txtfullname"
+            android:layout_marginTop="18dp"
+            android:drawableLeft="@drawable/telephone"
+            android:text="TextView"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/txtidcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtmobile"
+            android:layout_alignStart="@+id/txtmobile"
+            android:layout_marginTop="19dp"
+            android:drawableLeft="@drawable/idnumber"
+            android:text="TextView"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/txtrelationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtidcard"
+            android:layout_alignStart="@+id/txtidcard"
+            android:layout_marginTop="14dp"
+            android:clickable="true"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Relationship"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtrelationship"
+            android:layout_alignEnd="@+id/txtfullname"
+            android:layout_marginTop="22dp"
+            android:text="Save" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Farmer Relationship With Household"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnsave"
+            android:layout_alignStart="@+id/txtrelationship"
+            android:layout_alignBottom="@+id/btnsave"
+            android:layout_marginStart="10dp"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+
+         

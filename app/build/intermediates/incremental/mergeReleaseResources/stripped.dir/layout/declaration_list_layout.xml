@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/farmerimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/jnarh" />
+
+    <RelativeLayout
+        android:id="@+id/tooltiplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/tooltip1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="TransID: "
+                    android:textColor="@color/md_orange_800"
+                    android:textSize="@dimen/text_size_ssmall" />
+
+                <TextView
+                    android:id="@+id/transid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="UCL-200-35-200-355-200-35-20-35-200-35"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_ssmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/declaration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_100"
+                    android:fontFamily="@font/dosis_medium"
+                    android:padding="3dp"
+                    android:text="@string/sms_declaration"
+                    android:textColor="@color/md_orange_800"
+                    android:textSize="11.5sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!--AAAAAAAAAAAAAAAAAAAAAA-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/cost_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Cost: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/cost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/weight_layout"
+                            android:gravity="end"
+                            android:text="200"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/sub_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subsidized: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/sub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/payable_layout"
+                            android:gravity="end"
+                            android:text="40"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/agent_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agent ID: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/agent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/pcid_layout"
+                            android:gravity="end"
+                            android:text="AtoK"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/status_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/pcid_layout"
+                            android:gravity="end"
+                            android:text="Redeemed"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <!--BBBBBBBBBBBBBBBBBBBBBB-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/bags_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bags Payable: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/bagspayable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/count_layout"
+                            android:gravity="end"
+                            android:text="200"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/acreage_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Acreage: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/acreage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/acreage_layout"
+                            android:gravity="end"
+                            android:text="@string/acre"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/date_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date: "
+                            android:textColor="@color/md_orange_800"
+                            android:textSize="@dimen/text_size_ssmall" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:layout_toEndOf="@id/date_layout"
+                            android:gravity="end"
+                            android:text="dd MM, yyyy"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_ssmall" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

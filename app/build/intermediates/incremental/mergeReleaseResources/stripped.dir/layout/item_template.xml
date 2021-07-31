@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_autoscale_button3"
+        android:fontFamily="@font/dosis_medium"
+        android:padding="10dp"
+        android:text="@string/sms_declaration"
+        android:textSize="@dimen/text_size_bsmall"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+</LinearLayout>
+

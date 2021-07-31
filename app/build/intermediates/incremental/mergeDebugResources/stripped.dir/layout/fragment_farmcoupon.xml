@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/debtor_animate_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="7dp"
+    android:background="@color/viewBg"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/farm_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Farm Information"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_ssmall"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/l11"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/latitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latitude_"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/latitude_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1110258793"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/longitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/longitude_"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/longitude_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1110258793"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/l11"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/region_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brong Ahafo"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Community"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/community_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contunse"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/farmtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farm Type"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/farmtype_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maize"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/crop_variety"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crop Variety"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/crop_variety_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="White"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/landarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/landarea_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cultarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cultivation Area"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/cultarea_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textAlignment="viewEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorButton"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/redeem_coupon"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/redeem"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/05e20f5bc32d157eedf6d65edc15c84c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/60100b099850a9dd9764f39ddd515645/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/60100b099850a9dd9764f39ddd515645/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-data-binding-validator-1.0.0.aar/60100b099850a9dd9764f39ddd515645/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ilhasoft/data-binding-validator/1.0.0/63da6c4add1a83c1ab4655715aa0b35c4108cde5/data-binding-validator-1.0.0-javadoc.jar!/" />

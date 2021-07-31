@@ -2,11 +2,15 @@
   <library name="Gradle: com.beloo.widget:ChipsLayoutManager:0.3.7@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/75dd5d154a3494869dbb93b81028cd35/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/dc73a686ccc5bbca953c42eadaab5372/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/75dd5d154a3494869dbb93b81028cd35/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/75dd5d154a3494869dbb93b81028cd35/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/75dd5d154a3494869dbb93b81028cd35/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/dc73a686ccc5bbca953c42eadaab5372/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/dc73a686ccc5bbca953c42eadaab5372/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-ChipsLayoutManager-0.3.7.aar/dc73a686ccc5bbca953c42eadaab5372/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

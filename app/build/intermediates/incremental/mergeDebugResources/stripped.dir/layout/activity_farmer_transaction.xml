@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                                      
+                                                       
+                                                  
+                                                                     
+
+    
+
+                                           
+
+                                                          
+
+           
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200" android:tag="layout/activity_farmer_transaction_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context="com.telpo.usb.finger.activitie.FarmerTransaction">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/_l1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/gradient"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:src="@drawable/round_arrow_back_ios_24"
+                        android:tint="@color/grey_200" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/farmerimg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:shadowColor="@color/black_trans80"
+                        android:src="@drawable/jnarh"
+                        android:transitionName="farmerimg"
+                        CircleProgressView:civ_border_color="@color/white"
+                        CircleProgressView:civ_border_width="2dp" />
+
+
+                    <TextView
+                        android:id="@+id/farmername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Wiliam Snoe"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Farm(s)"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/farmcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="5"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_bsmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Farmer ID"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/farmerid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="UCL-200-35"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_bsmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Community"
+                                android:textColor="@color/md_orange_800"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/community"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:text="Maize"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_bsmall"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:id="@+id/_l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/_l1"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:id="@+id/card_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/header"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:fontFamily="@font/dosis_bold"
+                                    android:padding="5dp"
+                                    android:text="@string/recovery"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/select"
+                                    android:layout_width="0dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="0.2"
+                                    android:padding="5dp"
+                                    android:src="@drawable/down_arrow"
+                                    CircleProgressView:civ_border_color="@color/grey_300"
+                                    CircleProgressView:civ_border_width="0.1dip"
+                                    CircleProgressView:civ_circle_background_color="@color/grey_100a"
+                                    tools:ignore="UnusedAttribute" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/norecord"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:fontFamily="@font/dosis_regular"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="No Record Available"
+                                android:textSize="@dimen/text_size_medium_up"
+                                android:textStyle="italic"
+                                android:visibility="gone" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/scaletranrecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:clipToPadding="false"
+                                android:paddingTop="@dimen/list_item_spacing_half"
+                                android:paddingBottom="@dimen/list_item_spacing_half"
+                                tools:listitem="@layout/agent_item" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:fontFamily="@font/dosis_bold"
+                                    android:padding="5dp"
+                                    android:text="salestran transactions"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/norecordsales"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:fontFamily="@font/dosis_regular"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="No Record Available"
+                                android:textSize="@dimen/text_size_medium_up"
+                                android:textStyle="italic"
+                                android:visibility="gone" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/salestranrecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:clipToPadding="false"
+                                android:paddingTop="@dimen/list_item_spacing_half"
+                                android:paddingBottom="@dimen/list_item_spacing_half"
+                                tools:listitem="@layout/saletran_list_layout" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:animateLayoutChanges="true"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:fontFamily="@font/dosis_bold"
+                                    android:padding="5dp"
+                                    android:text="declaration transactions"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/norecorddeclaration"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:fontFamily="@font/dosis_regular"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="No Record Available"
+                                android:textSize="@dimen/text_size_medium_up"
+                                android:textStyle="italic"
+                                android:visibility="gone" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/declarationrecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/background_round_manual_scale"
+                                android:clipToPadding="false"
+                                android:paddingTop="@dimen/list_item_spacing_half"
+                                android:paddingBottom="@dimen/list_item_spacing_half"
+                                tools:listitem="@layout/declaration_list_layout" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+         

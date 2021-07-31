@@ -1,0 +1,183 @@
+
+                                                   
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.telpo.usb.finger.profile.fragments.FarmerProfileServices" android:tag="layout/fragment_farmer_profile_services_0" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <com.silencedut.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandable_layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:expWithParentScroll="true">
+
+                        <RelativeLayout
+                            android:id="@+id/firstLayer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/activityheader"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="Activity Information"
+                                    android:textColor="@color/text_color" />
+
+                                <Button
+                                    android:id="@+id/addactivity"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="6dp"
+                                    android:clickable="true"
+                                    android:drawableLeft="@drawable/add_another"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:text="Add Activity"
+                                    android:textColor="@color/text_color" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/activitystats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/activityheader"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_farmer_profile"
+                                android:text="1 Registered"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/activityarrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/activitystats"
+                                android:layout_toEndOf="@+id/activitystats"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </RelativeLayout>
+
+                        <!--child inventories: activity_item_layout.xml-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/activity_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.silencedut.expandablelayout.ExpandableLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <com.silencedut.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandable_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:expWithParentScroll="true">
+
+                        <RelativeLayout
+                            android:id="@+id/firstLayer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/farmheader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="Farm / Geographic Information"
+                                    android:textColor="@color/text_color" />
+
+                                <Button
+                                    android:id="@+id/addfarm"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="6dp"
+                                    android:clickable="true"
+                                    android:drawableLeft="@drawable/add_another"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:text="Add Farm"
+                                    android:textColor="@color/text_color" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/farmstats"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/farmheader"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_farmer_profile"
+                                android:text="1 Registered"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/farmarrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/farmstats"
+                                android:layout_toEndOf="@+id/farmstats"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </RelativeLayout>
+
+                        <!--child inventories : farm_item_layout.xml-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/farm_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.silencedut.expandablelayout.ExpandableLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+         

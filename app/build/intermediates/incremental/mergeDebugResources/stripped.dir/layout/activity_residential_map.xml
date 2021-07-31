@@ -1,0 +1,99 @@
+        
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_residential_map_0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/resmap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.telpo.usb.finger.activities.profile.ResidentialMapActivity" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="22dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:rotation="0"
+                android:src="@drawable/ic_save_white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btndirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnsave"
+                android:layout_alignStart="@+id/btnsave"
+                android:layout_marginBottom="11dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:rotation="0"
+                android:src="@drawable/ic_directions_white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnmylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btngeocode"
+                android:layout_alignStart="@+id/btndirection"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:rotation="0"
+                android:src="@drawable/ic_my_location_white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btngeocode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btndirection"
+                android:layout_alignStart="@+id/btndirection"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:rotation="0"
+                android:src="@drawable/ic_street_white" />
+
+            <TextView
+                android:id="@+id/coords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#73FFFFFF"
+                android:gravity="center"
+                android:text="Latitude : 0.0000000,  Longitude: 0.0000000"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/addresss_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coords"
+                android:layout_centerHorizontal="true"
+                android:background="#73FFFFFF"
+                android:gravity="center"
+                android:text="Loading...."
+                android:textColor="@color/text_color" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+         
+
+
+
+
+
+
+

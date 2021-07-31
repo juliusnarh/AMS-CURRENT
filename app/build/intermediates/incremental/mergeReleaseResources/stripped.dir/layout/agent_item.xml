@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="3">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/farmerimg"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.75"
+        android:src="@drawable/jnarh" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6">
+
+        <TextView
+            android:id="@+id/farmername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Narh, Julius"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/farmerid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmername"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="UCL-200-35"
+            android:textColor="@color/text_color" />
+
+
+        <TextView
+            android:id="@+id/farmernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmerid"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="0501546180"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/farmerreg_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmernumber"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Brong Ahafo, Kwamu south"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/farmerprogress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_barWidth="10dp"
+            CircleProgressView:cpv_innerContourSize="0dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_outerContourSize="0dp"
+            CircleProgressView:cpv_rimColor="@color/grey_200"
+            CircleProgressView:cpv_rimWidth="10dp"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_textColor="@color/accent"
+            CircleProgressView:cpv_textScale="0.9"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitColor="@color/accent"
+            CircleProgressView:cpv_unitPosition="right_top"
+            CircleProgressView:cpv_unitScale="0.9"
+            app:cpv_barStartEndLineWidth="@dimen/text_size_tiny"
+            app:cpv_barStrokeCap="Round" />
+
+        <TextView
+            android:id="@+id/tendered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmerprogress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="10/100"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_size_tiny" />
+    </RelativeLayout>
+</LinearLayout>

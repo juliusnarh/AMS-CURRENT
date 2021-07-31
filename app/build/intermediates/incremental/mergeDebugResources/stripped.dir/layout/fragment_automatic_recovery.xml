@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                       
+                                                                           
+
+    
+
+                                           
+
+                                                        
+
+           
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" android:tag="layout/fragment_automatic_recovery_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:animateLayoutChanges="true" tools:context=".inputdistributions_fragment.AutomaticRecoveryFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:id="@+id/save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/background_chips"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="6dp">
+
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="2dp"
+                            android:src="@drawable/twotone_save_24" />
+
+                        <TextView
+                            android:id="@+id/save_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/img"
+                            android:text="save"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/connect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/background_chips"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:id="@+id/wifi_connected"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/wifi"
+                            android:visibility="gone" />
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/wifi_connected"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginEnd="4dp"-->
+                        <!--android:src="@drawable/round_signal_wifi_4_bar_24"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:tint="@color/bar"/>-->
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/wifi_disconnected"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerInside"
+                            android:visibility="visible"
+                            app:lottie_autoPlay="true"
+                            app:lottie_colorFilter="@color/bar"
+                            app:lottie_fileName="wifi_intro.json"
+                            app:lottie_loop="true"
+                            app:lottie_scale="23" />
+
+                        <TextView
+                            android:id="@+id/connectedlabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/wifi_disconnected"
+                            android:text="connect"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/datalayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/empty_folder"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="visible"
+                        app:lottie_loop="true" />
+
+                    <TextView
+                        android:id="@+id/waiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="waiting for transaction..."
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size_bsmall"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/weighingstart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:padding="2dp"
+                        android:text="Weighing Start"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_bsmall"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/autoscale_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:visibility="gone"
+                        tools:listitem="@layout/autoscale_item" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--VERIFY AND UPLOAD-->
+            <LinearLayout
+                android:id="@+id/verify_upload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/secondary_light"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:visibility="gone"
+                app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosis_bold"
+                    android:text="Verify &amp; Upload Data"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_bsmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+         

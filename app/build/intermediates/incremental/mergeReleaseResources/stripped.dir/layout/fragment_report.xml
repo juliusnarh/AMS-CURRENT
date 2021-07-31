@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                                     
+
+    
+
+                                           
+
+                                                        
+
+                 
+                         
+                                                                                 
+
+           
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100" android:tag="layout/fragment_report_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context=".agent.fragment.AllAgentFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/viewBg"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <ImageView
+                            android:id="@+id/more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:src="@drawable/round_error_black_24"
+                            android:tint="@color/md_orange_900"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/farmersserved_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/transactions_made"
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/farmersserved"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_1"                
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll1"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/totalpayable_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/expected_recovery_bags"
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/totalpayable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_2"               
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll2"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/totalrecovery_label"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/recoveries_made"
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/totalrecovery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_3"                
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll4"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="Total Recovery %"
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/recoverypercent"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_4"                  
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll5"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="@string/bags_owing"
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/remaining_bags"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_5"            
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll3"
+                            android:animateLayoutChanges="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="Total Purchase made: "
+                                android:textColor="@color/md_orange_800" />
+
+                            <TextView
+                                android:id="@+id/totalpurchases"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:tag="binding_6"                 
+                                android:textColor="@color/text_color" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:animateLayoutChanges="true"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/card_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/viewBg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/header"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.95"
+                                android:fontFamily="@font/dosis_regular"
+                                android:tag="binding_7"         
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/text_size_medium_up" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.05"
+                                android:src="@drawable/down_arrow"
+                                android:tint="@color/md_grey_800" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/viewforsaletransactions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:background="@color/viewBg"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/viewall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/round_pressed_btn"
+                                android:text="@string/all"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/viewinput"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/round_btn"
+                                android:text="@string/inputs"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/viewservices"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/round_btn"
+                                android:text="@string/services"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/norecord"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_round_manual_scale"
+                            android:fontFamily="@font/dosis_regular"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="No Record Available"
+                            android:textSize="@dimen/text_size_medium_up"
+                            android:textStyle="italic"
+                            android:visibility="gone" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/report_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_round_manual_scale"
+                            android:clipToPadding="false"
+                            android:paddingTop="@dimen/list_item_spacing_half"
+                            android:paddingBottom="@dimen/list_item_spacing_half"
+                            tools:listitem="@layout/agent_item" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+         

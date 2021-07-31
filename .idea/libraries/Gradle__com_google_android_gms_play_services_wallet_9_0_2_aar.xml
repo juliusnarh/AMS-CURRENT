@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/2ebf68fb1af36a8b991a5546364643ad/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/2ebf68fb1af36a8b991a5546364643ad/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/2ebf68fb1af36a8b991a5546364643ad/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/e71288796f601d7707c41d5e9601801a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/e71288796f601d7707c41d5e9601801a/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-play-services-wallet-9.0.2.aar/e71288796f601d7707c41d5e9601801a/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
